@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+nav {
+    background-color: #222;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    border-bottom: #555 1px solid;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    background-color: tomato;
+    color: #222;
+    padding: 20px;
+    border-radius: 30px;
+    margin-right: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a h1 {
+    margin-left: 100px;
+    font-size: 45px;
+}
+
+.body {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.body .left-nav {
+    width: 20%;
+    background-color: #222;
+    position: fixed;
+    height: 100%;
+    margin-top: 100px;
+    border-right: #555 1px solid;
+    padding: 25px;
+}
+
+.left-nav ul {
+    align-items: center;
+}
+
+.left-nav li {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.left-nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.left-nav a:hover {
+    background-color: tomato;
+    border-radius: 30px;
+    color: #222;
+    transition: .5s;
+}
+
+.body .main {
+    width: 80%;
+    background-color: #222;
+    height: 100%;
+    margin-top: 100px;
+    margin-left: 20%;
+    padding: 100px;
+    color: white;
+}
+
+.body .main h1, h2, h3, h4, h5, h6 {
+    padding: 20px;
+    font-size: 40px;
+}
+
+.body .main p {
+    margin: 20px;
+    font-size: 23px;
+    white-space: pre-line;
+}
+
+.body .main h2,p b {
+    color: tomato;
+}
+
+.code-container {
+    background-color: #222;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    overflow-x: auto; 
+    white-space: pre-line   ;
+}
+
+code {
+    font-family: 'Courier New', monospace;
+    color: #f5f5f5;
+}

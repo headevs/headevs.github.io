@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Tutorial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="htmlt.css">
+</head>
+<body>
+    <nav>
+        <a href=""><h1>HTML Tutorial</h1></a>
+        <ul>
+            <li>
+                <a href="">Home</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="body">
+        <div class="left-nav">
+            <ul>
+                <li>
+                    <a href="">HTML Tags</a>
+                </li>
+                <li>
+                    <a href="">HTML Elements</a>
+                </li>
+                <li>
+                    <a href="">HTML Attributes</a>
+                </li>
+                <li>
+                    <a href="">Semanic HTML</a>
+                </li>
+                <li>
+                    <a href="">Conclusion</a>
+                </li>
+                
+            </ul>
+
+        </div>
+        <div class="main">
+            <h2>HTML, or Hypertext Markup Language, is a markup language for the web that defines the structure of web pages.</h2>
+
+            <p>It is one of the most basic building blocks of every website, so it's crucial to learn if you want to have a career in web development.
+                <br>
+            In this article, I will walk you through what HTML is about in detail, how it does things on web pages, and we'll also touch on a really cool part of HTML – Semantic HTML.
+            
+        </p>
+        <h2><b>What is HTML?</b></h2>
+        <p>To understand "HTML" from front to back, let's look at each word that makes up the abbreviation:</p>
+
+        <p><b>Hypertext:</b> text (often with embeds such as images, too) that is organized in order to connect related items.
+            <br>
+            <br>
+            <b>Markup:</b> a style guide for typesetting anything to be printed in hardcopy or soft copy format
+            <br>
+            <br>
+            <b>Language:</b> a language that a computer system understands and uses to interpret commands.
+            <br>
+            <br>
+            HTML determines the structure of web pages. This structure alone is not enough to make a web page look good and interactive. So you'll use assisted technologies such as CSS and JavaScript to make your HTML beautiful and add interactivity, respectively.
+            <br>
+            <br>
+            In this case, I like to break down the three technologies – HTML, CSS, and JavaScript – this way: they are like a human body.</p>
+
+            <ul>
+                <li>
+                    <p>HTML is the skeleton,</p>
+                </li>
+                <li>
+                    <p>CSS is the skin,</p>    
+                </li>
+                <li>
+                        <p>and JavaScript is the circulatory, digestive, and respiratory systems that brings the structure and the skin to life.</p>
+                </li>
+            </ul>
+
+            <p>You can also look at HTML, CSS, and JavaScript this way: HTML is the structure of a house, CSS is the interior and exterior decor, and JavaScript is the electricity, water system, and many other functional features that make the house livable.</p>
+            <div class="code-container">
+                <code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                    &lt;title&gt;Page Title&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                    
+                    &lt;h1&gt;My First Heading&lt;/h1&gt;
+                    &lt;p&gt;My first paragraph.&lt;/p&gt;
+                    
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </code>
+            </div>
+            <p>This is a basic HTML document that illustrates some fundamental elements:</p>
+
+            <ul>
+                <li>
+                    <p><code>&lt;!DOCTYPE html&gt;</code> declaration defines that this document is an HTML5 document</p>
+                </li>
+                <li>
+                    <p><code>&lt;html&gt;</code> element is the root element of an HTML page</p>
+                </li>
+                <li>
+                    <p><code>&lt;head&gt;</code> element contains meta information about the HTML page</p>
+                </li>
+                <li>
+                    <p><code>&lt;title&gt;</code> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)</p>
+                </li>
+                <li>
+                    <p><code>&lt;body&gt;</code> element defines the document's body and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</p>
+                </li>
+                <li>
+                    <p><code>&lt;h1&gt;</code> element defines a large heading</p>
+                </li>
+                <li>
+                    <p><code>&lt;p&gt;</code> element defines a paragraph</p>
+                </li>
+            </ul>
+            <h2><b>HTML Tags</b></h2>
+            <p>Since HTML defines the markup for a particular web page, you'll want the text, images, or other embeds to appear in certain ways.
+
+                For example, you might want some text to be big, other text to be small, and some to be bold, italic, or in bullet point form.
+                
+                HTML has "tags" that let you get this done. So, there are tags to create headings, paragraphs, bolded words, italicized words, and more.
+                
+                The image below describes the anatomy of an HTML tag:</p>
+                <img src="htmlt-img/htmlt-tag-img.png" alt="">
+
+                <h2><b>Here are the most common html tags</b></h2>
+                <p>
+                    <b>&lt;!DOCTYPE html&gt;:</b> Defines the document type and version of HTML being used (HTML5 in this case).
+
+                    <b>&lt;html&gt;:</b> The root element of an HTML document.
+
+                    <b>&lt;head&gt;:</b> Contains metadata about the HTML document, such as title, character set, styles, and scripts.
+
+                    <b>&lt;title&gt;:</b> Sets the title of the HTML document, displayed in the browser's title bar or tab.
+
+                    <b>&lt;body&gt;:</b> Contains the content of the HTML document, including text, images, links, and more.
+
+                    <b>&lt;h1&gt; to &lt;h6&gt;:</b> Heading tags, where &lt;h1&gt; is the largest and &lt;h6&gt; is the smallest. Used to define headings and subheadings.
+
+                    <b>&lt;p&gt;:</b> Defines a paragraph of text.
+
+                    <b>&lt;a&gt;:</b> Creates a hyperlink, allowing you to link to other pages or resources.
+
+                    <b>&lt;img&gt;:</b> Embeds an image in the document.
+
+                    <b>&lt;ul&gt;:</b> Defines an unordered list, typically used with &lt;li&gt; (list item) elements.
+
+                    <b>&lt;ol&gt;:</b> Defines an ordered list, typically used with &lt;li&gt; elements.
+
+                    <b>&lt;li&gt;:</b> Represents a list item within an ordered or unordered list.
+
+                    <b>&lt;div&gt;:</b> A generic container that is often used to group and style content.
+
+                    <b>&lt;span&gt;:</b> Similar to &lt;div&gt;, but used for smaller inline styling and grouping.
+
+                    <b>&lt;strong&gt; or &lt;b&gt;:</b> Represents strong importance or bold text.
+
+                    <b>&lt;em&gt; or &lt;i&gt;:</b> Represents emphasized text or italicized text.
+
+                    <b>&lt;br&gt;:</b> Creates a line break within text.
+
+                    <b>&lt;hr&gt;:</b> Inserts a horizontal line, often used as a thematic break in content.
+
+                    <b>&lt;input&gt;:</b> Used to create various types of input fields in forms.
+
+                    <b>&lt;form&gt;:</b> Defines an HTML form for user input.
+
+                </p>
+        </div>
+    </div>
+</body>
+</html>
