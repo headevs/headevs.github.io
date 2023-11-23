@@ -8,6 +8,49 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
+/* code container */
+
+.code-container {
+    background-color: #222;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    overflow-x: auto; 
+    white-space: pre-line   ;
+}
+
+code {
+    font-family: 'Courier New', monospace;
+    color: #f5f5f5;
+}
+
+/* output image */
+
+.output-img img {
+    width: 1200px;
+    height: auto;
+}
+
+/* main divs */
+
+.html-main {
+
+}
+
+.html-elements {
+    padding-top: 100px;
+}
+
+.html-tags {
+    padding-top: 100px;
+}
+
+.html-att {
+    padding-top: 100px;
+}
+
+/* main web */
+
 nav {
     background-color: #222;
     height: 100px;
@@ -89,6 +132,7 @@ nav a h1 {
     margin-left: 20%;
     padding: 100px;
     color: white;
+    padding-top: 100px;
 }
 
 .body .main h1, h2, h3, h4, h5, h6 {
@@ -106,16 +150,4 @@ nav a h1 {
     color: tomato;
 }
 
-.code-container {
-    background-color: #222;
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px 0;
-    overflow-x: auto; 
-    white-space: pre-line   ;
-}
 
-code {
-    font-family: 'Courier New', monospace;
-    color: #f5f5f5;
-}
