@@ -1,10 +1,8 @@
 body {
     background-image: url(images/bg.gif);
-    margin: 0; /* Remove default body margin */
+    margin: 0;
     padding: 0;
-   
-    
-   
+    font-family: 'Nunito', sans-serif;
 }
 
 .hea {
@@ -13,10 +11,7 @@ body {
     font-size: xx-large;
     margin: 0; 
     padding: 20px;
-
 }
-
-
 
 .header {
     display: flex;
