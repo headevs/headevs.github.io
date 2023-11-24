@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +8,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="htmlt.css">
 </head>
+
 <body>
     <nav>
         <div class="darkmode-container">
             <button class="dmButton" id="dmButton"><i class="fas fa-adjust darkmode-icon"></i></button>
         </div>
-        <a href="#main"><h1>HTML Tutorial</h1></a>
+        <a href="#main">
+            <h1>HTML Tutorial</h1>
+        </a>
         <div class="dropdown">
             <button><i class="fas fa-bars dropdown-icon"></i></button>
             <div class="dropdown-menu">
                 <ul>
                     <li>
-                        <a href="">Home</a>
+                        <a href="./main.html">Home</a>
                     </li>
                     <li>
                         <a href="#">HTML</a>
@@ -49,7 +55,7 @@
                     <li>
                         <a href="">HTML CONTENT</a>
                     </li>
-                    
+
                 </ul>
             </div>
         </div>
@@ -72,23 +78,27 @@
                 <li>
                     <a href="">HTML CONTENT</a>
                 </li>
-                
+
             </ul>
 
         </div>
         <div class="main" id="main">
             <div class="html-main" id="html-main">
-                <h2>HTML, or Hypertext Markup Language, is a markup language for the web that defines the structure of web pages.</h2>
+                <h2>HTML, or Hypertext Markup Language, is a markup language for the web that defines the structure of
+                    web pages.</h2>
 
-                <p>It is one of the most basic building blocks of every website, so it's crucial to learn if you want to have a career in web development.
+                <p>It is one of the most basic building blocks of every website, so it's crucial to learn if you want to
+                    have a career in web development.
                     <br>
-                In this article, I will walk you through what HTML is about in detail, how it does things on web pages, and we'll also touch on a really cool part of HTML – Semantic HTML.
+                    In this article, I will walk you through what HTML is about in detail, how it does things on web
+                    pages, and we'll also touch on a really cool part of HTML – Semantic HTML.
                 </p>
 
                 <h2><b>What is HTML?</b></h2>
                 <p>To understand "HTML" from front to back, let's look at each word that makes up the abbreviation:</p>
 
-                <p><b>Hypertext:</b> text (often with embeds such as images, too) that is organized in order to connect related items.
+                <p><b>Hypertext:</b> text (often with embeds such as images, too) that is organized in order to connect
+                    related items.
                     <br>
                     <br>
                     <b>Markup:</b> a style guide for typesetting anything to be printed in hardcopy or soft copy format
@@ -97,10 +107,13 @@
                     <b>Language:</b> a language that a computer system understands and uses to interpret commands.
                     <br>
                     <br>
-                    HTML determines the structure of web pages. This structure alone is not enough to make a web page look good and interactive. So you'll use assisted technologies such as CSS and JavaScript to make your HTML beautiful and add interactivity, respectively.
+                    HTML determines the structure of web pages. This structure alone is not enough to make a web page
+                    look good and interactive. So you'll use assisted technologies such as CSS and JavaScript to make
+                    your HTML beautiful and add interactivity, respectively.
                     <br>
                     <br>
-                    In this case, I like to break down the three technologies – HTML, CSS, and JavaScript – this way: they are like a human body.
+                    In this case, I like to break down the three technologies – HTML, CSS, and JavaScript – this way:
+                    they are like a human body.
                 </p>
 
                 <ul>
@@ -108,14 +121,17 @@
                         <p>HTML is the skeleton,</p>
                     </li>
                     <li>
-                        <p>CSS is the skin,</p>    
+                        <p>CSS is the skin,</p>
                     </li>
                     <li>
-                            <p>and JavaScript is the circulatory, digestive, and respiratory systems that brings the structure and the skin to life.</p>
+                        <p>and JavaScript is the circulatory, digestive, and respiratory systems that brings the
+                            structure and the skin to life.</p>
                     </li>
                 </ul>
 
-                <p>You can also look at HTML, CSS, and JavaScript this way: HTML is the structure of a house, CSS is the interior and exterior decor, and JavaScript is the electricity, water system, and many other functional features that make the house livable.</p>
+                <p>You can also look at HTML, CSS, and JavaScript this way: HTML is the structure of a house, CSS is the
+                    interior and exterior decor, and JavaScript is the electricity, water system, and many other
+                    functional features that make the house livable.</p>
                 <div class="code-container">
                     <code>
                         &lt;!DOCTYPE html&gt;
@@ -145,10 +161,12 @@
                         <p><b>&lt;head&gt;</b> element contains meta information about the HTML page</p>
                     </li>
                     <li>
-                        <p><b>&lt;title&gt;</b> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)</p>
+                        <p><b>&lt;title&gt;</b> element specifies a title for the HTML page (which is shown in the
+                            browser's title bar or in the page's tab)</p>
                     </li>
                     <li>
-                        <p><b>&lt;body&gt;</b> element defines the document's body and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</p>
+                        <p><b>&lt;body&gt;</b> element defines the document's body and is a container for all the
+                            visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</p>
                     </li>
                     <li>
                         <p><b>&lt;h1&gt;</b> element defines a large heading</p>
@@ -156,88 +174,109 @@
                     <li>
                         <p><b>&lt;p&gt;</b> element defines a paragraph</p>
                     </li>
-                </ul>            
+                </ul>
             </div>
             <hr>
             <div class="html-elements" id="html-elements">
                 <h2>HTML Elements</h2>
                 <p>
-                    HTML (Hypertext Markup Language) <b>elements</b> are the building blocks of an HTML document. An HTML <b>element</b> is a structural component of a web page, consisting of <b>tags</b>, <b>content</b>, and <b>attributes</b>. HTML <b>elements</b> are used to define and describe the structure and content of a webpage.
-                
+                    HTML (Hypertext Markup Language) <b>elements</b> are the building blocks of an HTML document. An
+                    HTML <b>element</b> is a structural component of a web page, consisting of <b>tags</b>,
+                    <b>content</b>, and <b>attributes</b>. HTML <b>elements</b> are used to define and describe the
+                    structure and content of a webpage.
+
                     Here's a breakdown of the basic structure of an HTML <b>element</b>:
-                
-                    1. <b>Opening Tag:</b> The element begins with an <b>opening</b> tag, which consists of the element's name enclosed in angle brackets. For example, <b>&lt;p&gt;</b> is the opening tag for a <b>paragraph</b> element.
-                
-                    2. <b>Content:</b> The actual content of the element is placed between the <b>opening</b> and <b>closing</b> tags. This can include text, other elements, or multimedia content.
-                
-                    3. <b>Closing Tag:</b> The element ends with a <b>closing</b> tag, which is similar to the opening tag but includes a forward slash before the element's name. For example, <b>&lt;/p&gt;</b> is the closing tag for a <b>paragraph</b> element.
-                
-                    4. <b>Attributes:</b> Optionally, elements can have attributes, which provide additional information about the element. <b>Attributes</b> are placed within the opening tag and typically come in name-value pairs. For example, in <b>&lt;a href="https://www.link.com"&gt;</b>, <b>href</b> is an attribute that specifies the hyperlink reference.
-                
+
+                    1. <b>Opening Tag:</b> The element begins with an <b>opening</b> tag, which consists of the
+                    element's name enclosed in angle brackets. For example, <b>&lt;p&gt;</b> is the opening tag for a
+                    <b>paragraph</b> element.
+
+                    2. <b>Content:</b> The actual content of the element is placed between the <b>opening</b> and
+                    <b>closing</b> tags. This can include text, other elements, or multimedia content.
+
+                    3. <b>Closing Tag:</b> The element ends with a <b>closing</b> tag, which is similar to the opening
+                    tag but includes a forward slash before the element's name. For example, <b>&lt;/p&gt;</b> is the
+                    closing tag for a <b>paragraph</b> element.
+
+                    4. <b>Attributes:</b> Optionally, elements can have attributes, which provide additional information
+                    about the element. <b>Attributes</b> are placed within the opening tag and typically come in
+                    name-value pairs. For example, in <b>&lt;a href="https://www.link.com"&gt;</b>, <b>href</b> is an
+                    attribute that specifies the hyperlink reference.
+
                     Here's a simple example with a <b>paragraph</b> element:
-                
+
                     <b>&lt;p&gt;</b>This is a paragraph of text.<b>&lt;/p&gt;</b>
-                
+
                     In this example:
                     - <b>&lt;p&gt;</b> is the <b>opening</b> tag.
                     - This is a <b>paragraph</b> of text. is the <b>content</b>.
                     - <b>&lt;/p&gt;</b> is the <b>closing</b> tag.
-                
-                    HTML <b>elements</b> are the foundation of web development, and by combining and nesting various elements, developers can create complex and structured web pages. Each HTML <b>element</b> serves a specific purpose and contributes to the overall structure and layout of a webpage.
+
+                    HTML <b>elements</b> are the foundation of web development, and by combining and nesting various
+                    elements, developers can create complex and structured web pages. Each HTML <b>element</b> serves a
+                    specific purpose and contributes to the overall structure and layout of a webpage.
                 </p>
-            </div>    
+            </div>
             <hr>
             <div class="html-tags" id="html-tags">
                 <h2><b>HTML Tags</b></h2>
-                <p>Since HTML defines the markup for a particular web page, you'll want the text, images, or other embeds to appear in certain ways.
-    
-                    For example, you might want some text to be big, other text to be small, and some to be bold, italic, or in bullet point form.
-                    
-                    HTML has "tags" that let you get this done. So, there are tags to create headings, paragraphs, bolded words, italicized words, and more.
-                    
+                <p>Since HTML defines the markup for a particular web page, you'll want the text, images, or other
+                    embeds to appear in certain ways.
+
+                    For example, you might want some text to be big, other text to be small, and some to be bold,
+                    italic, or in bullet point form.
+
+                    HTML has "tags" that let you get this done. So, there are tags to create headings, paragraphs,
+                    bolded words, italicized words, and more.
+
                     The image below describes the anatomy of an HTML tag:</p>
-                    <img src="htmlt-img/htmlt-tag-img.png" alt="" class="htmlt-tag-img">
+                <img src="htmlt-img/htmlt-tag-img.png" alt="" class="htmlt-tag-img">
 
                 <h2><b>Here are the most common HTML Tags</b></h2>
                 <p>
-                    <b>&lt;!DOCTYPE html&gt;:</b> Defines the document type and version of HTML being used (HTML5 in this case).
-            
+                    <b>&lt;!DOCTYPE html&gt;:</b> Defines the document type and version of HTML being used (HTML5 in
+                    this case).
+
                     <b>&lt;html&gt;:</b> The root element of an HTML document.
-            
-                    <b>&lt;head&gt;:</b> Contains metadata about the HTML document, such as title, character set, styles, and scripts.
-            
-                    <b>&lt;title&gt;:</b> Sets the title of the HTML document, displayed in the browser's title bar or tab.
-            
-                    <b>&lt;body&gt;:</b> Contains the content of the HTML document, including text, images, links, and more.
-            
-                    <b>&lt;h1&gt; to &lt;h6&gt;:</b> Heading tags, where &lt;h1&gt; is the largest and &lt;h6&gt; is the smallest. Used to define headings and subheadings.
-            
+
+                    <b>&lt;head&gt;:</b> Contains metadata about the HTML document, such as title, character set,
+                    styles, and scripts.
+
+                    <b>&lt;title&gt;:</b> Sets the title of the HTML document, displayed in the browser's title bar or
+                    tab.
+
+                    <b>&lt;body&gt;:</b> Contains the content of the HTML document, including text, images, links, and
+                    more.
+
+                    <b>&lt;h1&gt; to &lt;h6&gt;:</b> Heading tags, where &lt;h1&gt; is the largest and &lt;h6&gt; is the
+                    smallest. Used to define headings and subheadings.
+
                     <b>&lt;p&gt;:</b> Defines a paragraph of text.
-            
+
                     <b>&lt;a&gt;:</b> Creates a hyperlink, allowing you to link to other pages or resources.
-            
+
                     <b>&lt;img&gt;:</b> Embeds an image in the document.
-            
+
                     <b>&lt;ul&gt;:</b> Defines an unordered list, typically used with &lt;li&gt; (list item) elements.
-            
+
                     <b>&lt;ol&gt;:</b> Defines an ordered list, typically used with &lt;li&gt; elements.
-            
+
                     <b>&lt;li&gt;:</b> Represents a list item within an ordered or unordered list.
-            
+
                     <b>&lt;div&gt;:</b> A generic container that is often used to group and style content.
-            
+
                     <b>&lt;span&gt;:</b> Similar to &lt;div&gt;, but used for smaller inline styling and grouping.
-            
+
                     <b>&lt;strong&gt; or &lt;b&gt;:</b> Represents strong importance or bold text.
-            
+
                     <b>&lt;em&gt; or &lt;i&gt;:</b> Represents emphasized text or italicized text.
-            
+
                     <b>&lt;br&gt;:</b> Creates a line break within text.
-            
+
                     <b>&lt;hr&gt;:</b> Inserts a horizontal line, often used as a thematic break in content.
-            
+
                     <b>&lt;input&gt;:</b> Used to create various types of input fields in forms.
-            
+
                     <b>&lt;form&gt;:</b> Defines an HTML form for user input.
                 </p>
 
@@ -308,7 +347,7 @@
                     
                         &lt;/html&gt;
                     </code>
-                    
+
                 </div>
 
                 <div class="output-button">
@@ -319,11 +358,21 @@
             <div class="html-att" id="html-att">
                 <h2><b>HTML Attributes</b></h2>
                 <p>
-                    An attribute in HTML is a fundamental component used to provide additional information about HTML elements. Attributes are included within the opening tag of an element and consist of a name-value pair, where the name identifies the attribute, and the value provides specific information or instructions associated with that attribute.
+                    An attribute in HTML is a fundamental component used to provide additional information about HTML
+                    elements. Attributes are included within the opening tag of an element and consist of a name-value
+                    pair, where the name identifies the attribute, and the value provides specific information or
+                    instructions associated with that attribute.
 
-                    Attributes serve to modify or customize the behavior, appearance, or functionality of HTML elements. They enable developers to convey essential details or instructions to browsers and other processors interpreting the HTML code. Common attributes include "id" for specifying a unique identifier, "class" for assigning one or more style classes, and "style" for inline CSS styling.
+                    Attributes serve to modify or customize the behavior, appearance, or functionality of HTML elements.
+                    They enable developers to convey essential details or instructions to browsers and other processors
+                    interpreting the HTML code. Common attributes include "id" for specifying a unique identifier,
+                    "class" for assigning one or more style classes, and "style" for inline CSS styling.
 
-                    Attributes contribute to the versatility and extensibility of HTML by allowing developers to tailor the presentation and behavior of elements. They play a pivotal role in the integration of HTML with other web technologies, facilitating a richer and more interactive user experience on the web. In summary, attributes are crucial for enhancing the descriptive and interactive aspects of HTML elements within the broader context of web development.
+                    Attributes contribute to the versatility and extensibility of HTML by allowing developers to tailor
+                    the presentation and behavior of elements. They play a pivotal role in the integration of HTML with
+                    other web technologies, facilitating a richer and more interactive user experience on the web. In
+                    summary, attributes are crucial for enhancing the descriptive and interactive aspects of HTML
+                    elements within the broader context of web development.
                 </p>
                 <h2><b>Here are the most common HTML Attributes:</b></h2>
                 <p>
@@ -334,7 +383,8 @@
                     <b>alt:</b> Provides alternative text for images, displayed if the image cannot be loaded.
                     <b>href:</b> Specifies the URL of a linked resource, commonly used in &lt;a&gt; (anchor) elements.
                     <b>width: and height:</b> Sets the width and height of elements like images and tables.
-                    <b>target:</b> Defines where to open linked documents. Common values are _blank (opens in a new tab or window) or _self (opens in the same tab or window).
+                    <b>target:</b> Defines where to open linked documents. Common values are _blank (opens in a new tab
+                    or window) or _self (opens in the same tab or window).
                     <b>disabled:</b> Used in form elements to disable user interaction.
                     <b>placeholder:</b> Provides a short hint that describes the expected value of an input field.
                 </p>
@@ -404,15 +454,16 @@
                     
                         &lt;/html&gt;
                     </code>
-                    
+
                 </div>
 
-            <div class="output-button"><a href="sample-att.html">Output</a>
+                <div class="output-button"><a href="sample-att.html">Output</a>
                 </div>
             </div>
-               
+
         </div>
     </div>
 </body>
 <script src="./htmlt.js"></script>
+
 </html>
