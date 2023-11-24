@@ -9,10 +9,22 @@ body {
     width: 100%;
 }
 
+/* Theme changer */
+
+:root {
+    --primary-color: white;
+    --secondary-color: #222; 
+}
+
+.switch-theme {
+    --primary-color: black;
+    --secondary-color: white;
+}
+
 /* code container */
 
 .code-container {
-    background-color: #222;
+    background-color: var(--secondary-color);
     border: 1px solid #ccc;
     padding: 10px;
     margin: 10px 0;
@@ -22,7 +34,7 @@ body {
 
 code {
     font-family: 'Courier New', monospace;
-    color: #f5f5f5;
+    color: var(--primary-color);
 }
 
 /* output button */
@@ -51,9 +63,6 @@ code {
 
 /* main divs */
 
-.html-main {
-
-}
 
 .html-elements {
     padding-top: 100px;
@@ -89,6 +98,30 @@ nav {
     justify-content: space-between;
 }
 
+.darkmode-container {
+    position: relative;
+    margin-left: 150px;
+}
+
+.darkmode-container button {
+    color: tomato;
+    padding: 5px;
+    width: 80px;
+    height: 80px;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.darkmode-container button:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.darkmode-icon {
+    font-size: 50px;
+}
+
 nav ul li {
     list-style: none;
 }
@@ -121,7 +154,7 @@ nav a h1 {
 
 .dropdown button:hover {
     cursor: pointer;
-    color: white;
+    color: var(--primary-color);
 }
 
 .dropdown-icon {
@@ -147,7 +180,7 @@ nav a h1 {
 
 .dropdown-menu a {
     text-decoration: none;
-    color: white;
+    color: var(--primary-color);
     padding: 20px;
     font-size: 25px;
 }
@@ -202,14 +235,14 @@ nav a h1 {
 
 /* main content */
 
-.body .main {
+.main {
     width: 80%;
-    background-color: #222;
+    background-color: var(--secondary-color);
     height: 100%;
     margin-top: 100px;
     margin-left: 20%;
     padding: 100px;
-    color: white;
+    color: var(--primary-color);
     padding-top: 100px;
 }
 
@@ -242,9 +275,17 @@ img.htmlt-tag-img {
     nav {
         height: 65px;
     }
+
+    .darkmode-container {
+        margin-left: 10px;
+    }
+
+    .darkmode-icon {
+        font-size: 30px;
+    }
     
     nav a h1 {
-        margin-left: 20px;
+        margin-left: 0;
         font-size: 20px;
     }
     
@@ -276,6 +317,7 @@ img.htmlt-tag-img {
         padding: 2px;
         margin: 25px;
         font-size: 20px;
+        color: white;
     }
     
     .left-nav-res {
@@ -303,7 +345,7 @@ img.htmlt-tag-img {
         margin-top: 0;
         margin-left: 0;
         padding: 30px;
-        color: white;
+        color: var(--primary-color);
         padding-top: 100px;
     }
 
