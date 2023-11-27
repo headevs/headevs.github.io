@@ -73,10 +73,31 @@
                     <a href="#html-att">HTML Attributes</a>
                 </li>
                 <li>
-                    <a href="">HTML CONTENT</a>
+                    <a href="#document-structure">Document Structures</a>
                 </li>
                 <li>
-                    <a href="">HTML CONTENT</a>
+                    <a href="text-formatting">Text Formatting</a>
+                </li>
+                <li>
+                    <a href="#links-nav">Links and Navigation</a>
+                </li>
+                <li>
+                    <a href="#lists">Lists</a>
+                </li>
+                <li>
+                    <a href="#tables">Tables</a>
+                </li>
+                <li>
+                    <a href="#forms">Forms</a>
+                </li>
+                <li>
+                    <a href="#multimedia">Multimedia</a>
+                </li>
+                <li>
+                    <a href="#semanic">Semanic Elements</a>
+                </li>
+                <li>
+                    <a href="#style-script">Style and Scripting</a>
                 </li>
 
             </ul>
@@ -99,19 +120,12 @@
 
                 <p><b>Hypertext:</b> text (often with embeds such as images, too) that is organized in order to connect
                     related items.
-                    <br>
-                    <br>
                     <b>Markup:</b> a style guide for typesetting anything to be printed in hardcopy or soft copy format
-                    <br>
-                    <br>
                     <b>Language:</b> a language that a computer system understands and uses to interpret commands.
-                    <br>
-                    <br>
                     HTML determines the structure of web pages. This structure alone is not enough to make a web page
                     look good and interactive. So you'll use assisted technologies such as CSS and JavaScript to make
                     your HTML beautiful and add interactivity, respectively.
-                    <br>
-                    <br>
+
                     In this case, I like to break down the three technologies – HTML, CSS, and JavaScript – this way:
                     they are like a human body.
                 </p>
@@ -460,7 +474,196 @@
                 <div class="output-button"><a href="sample-att.html">Output</a>
                 </div>
             </div>
+            <hr>
+            <div class="document-structure" id="document-structure">
+                <h2>Document Structures</h2>
 
+                <p>This example illustrates the importance of document structure. The &lt;header&gt; contains the main heading, while the &lt;nav&gt; section holds navigation links in an unordered list. Sections (&lt;section&gt;) with unique IDs represent distinct parts of the content, and a &lt;footer&gt; contains copyright information.</p>
+                
+                <div class="code-container">
+                    <code>
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html&gt;
+                        &lt;head&gt;
+                        &lt;title&gt;Document Structure&lt;/title&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt;
+                        &lt;header&gt;
+                            &lt;h1&gt;Main Heading&lt;/h1&gt;
+                        &lt;/header&gt;
+                        &lt;nav&gt;
+                            &lt;ul&gt;
+                            &lt;li&gt;&lt;a href="#section1"&gt;Section 1&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="#section2"&gt;Section 2&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/nav&gt;
+                        &lt;section id="section1"&gt;
+                            &lt;h2&gt;Section 1&lt;/h2&gt;
+                            &lt;p&gt;Content of Section 1 goes here.&lt;/p&gt;
+                        &lt;/section&gt;
+                        &lt;section id="section2"&gt;
+                            &lt;h2&gt;Section 2&lt;/h2&gt;
+                            &lt;p&gt;Content of Section 2 goes here.&lt;/p&gt;
+                        &lt;/section&gt;
+                        &lt;footer&gt;
+                            &lt;p&gt;&amp;copy; 2023 My Website&lt;/p&gt;
+                        &lt;/footer&gt;
+                        &lt;/body&gt;
+                        &lt;/html&gt;
+                    </code>
+                </div>
+
+            </div>
+            <hr>
+            <div class="text-formatting" id="text-formatting">
+                <h2>Text Formatting</h2>
+                <p>HTML allows for text formatting using tags like &lt;em&gt; for emphasis (italic) and &lt;strong&gt; for strong emphasis (bold). These tags convey semantic meaning, helping browsers and accessibility tools interpret the content correctly.</p>
+
+                <div class="code-container">
+                    <code>
+                        &lt;h1&gt;Main Heading&lt;/h1&gt;
+                        &lt;p&gt;This is a &lt;em&gt;paragraph&lt;/em&gt; with emphasized text. The &lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt; tag is used for emphasizing text, typically rendering it in italics. Similarly, the &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; tag can be used for strong emphasis, rendering text in bold.&lt;/p&gt;
+                    </code>
+                </div>
+            </div>
+            <hr>
+            <div class="links-nav" id="links-nav">
+                <h2>Links and Navigation</h2>
+                <p>Links are created with the &lt;a&gt; tag and the href attribute. In this example, it links to "https://www.example.com." Images are embedded using the &lt;img&gt; tag, with the src attribute specifying the image source and alt providing alternative text for accessibility.</p>
+
+                <div class="code-container">
+                    <code>
+                        &lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;
+                        &lt;img src="image.jpg" alt="A descriptive image"&gt;
+                    </code>
+                </div>
+            </div>
+            <hr>
+            <div class="lists" id="lists">
+                <h2>Lists</h2>
+                <p>Lists in HTML can be either unordered (&lt;ul&gt;) or ordered (&lt;ol&gt;). List items are denoted by the &lt;li&gt; tag. This example showcases both types of lists with simple items.</p>
+
+                <div class="code-container">
+                    <code>
+                        &lt;ul&gt;
+                            &lt;li&gt;Item 1&lt;/li&gt;
+                            &lt;li&gt;Item 2&lt;/li&gt;
+                        &lt;/ul&gt;
+                        
+                        &lt;ol&gt;
+                            &lt;li&gt;First&lt;/li&gt;
+                            &lt;li&gt;Second&lt;/li&gt;
+                        &lt;/ol&gt;                       
+                    </code>
+                </div>
+            </div>
+            <hr>
+            <div class="tables" id="tables">
+                <h2>Tables</h2>
+                <p>HTML tables are created using the &lt;table&gt; tag. Tables consist of rows (&lt;tr&gt;), header cells (&lt;th&gt;), and data cells (&lt;td&gt;). This example shows a basic table with headers and data.</p>
+
+                <div class="code-container">
+                    <code>
+                        &lt;table&gt;
+                        &lt;tr&gt;
+                            &lt;th&gt;Header 1&lt;/th&gt;
+                            &lt;th&gt;Header 2&lt;/th&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;Data 1&lt;/td&gt;
+                            &lt;td&gt;Data 2&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;/table&gt;
+                    </code>
+                </div>
+            </div>
+            <hr>
+            <div class="formas" id="forms">
+                <h2>Forms</h2>
+                <p>Forms are integral for user input. The &lt;form&gt; tag contains input elements like text and password fields. The label tag is associated with input fields for better accessibility.</p>
+
+                <div class="code-container">
+                    <code>
+                        &lt;form action="/submit" method="post"&gt;
+                        &lt;label for="username"&gt;Username:&lt;/label&gt;
+                        &lt;input type="text" id="username" name="username"&gt;
+
+                        &lt;label for="password"&gt;Password:&lt;/label&gt;
+                        &lt;input type="password" id="password" name="password"&gt;
+
+                        &lt;input type="submit" value="Submit"&gt;
+                        &lt;/form&gt;
+                    </code>
+                </div>
+            </div>
+            <hr>
+            <div class="multimedia" id="multimedia">
+                <h2>Multimedia</h2>
+                <p>Multimedia elements like &lt;audio&gt; and &lt;video&gt; allow embedding audio and video. The controls attribute provides playback controls, and the &lt;source&gt; tag specifies the media source and type.
+                </p>
+
+                <div class="code-container">
+                    <code>
+                        &lt;audio controls&gt;
+                        &lt;source src="audio.mp3" type="audio/mp3"&gt;
+                        Your browser does not support the audio tag.
+                        &lt;/audio&gt;
+
+                        &lt;video width="320" height="240" controls&gt;
+                        &lt;source src="video.mp4" type="video/mp4"&gt;
+                        Your browser does not support the video tag.
+                        &lt;/video&gt;
+                    </code>
+                </div>
+            </div>
+            <hr>
+            <div class="semanic" id="semanic">
+                <h2>Semanic Elements</h2>
+                <p>Semantic elements like &lt;header&gt;, &lt;article&gt;, &lt;aside&gt;, and &lt;footer&gt; enhance document structure. They provide context to different parts of the content, aiding in accessibility and SEO.
+                </p>
+
+                <div class="code-container">
+                    <code>
+                        &lt;header&gt;
+                        &lt;h1&gt;Website Header&lt;/h1&gt;
+                        &lt;/header&gt;
+
+                        &lt;article&gt;
+                        &lt;h2&gt;Article Title&lt;/h2&gt;
+                        &lt;p&gt;Content of the article goes here.&lt;/p&gt;
+                        &lt;/article&gt;
+
+                        &lt;aside&gt;
+                        &lt;p&gt;Related information or ads can go here.&lt;/p&gt;
+                        &lt;/aside&gt;
+
+                        &lt;footer&gt;
+                        &lt;p&gt;&amp;copy; 2023 My Website&lt;/p&gt;
+                        &lt;/footer&gt;
+                    </code>
+                </div>
+            </div>
+            <hr>
+            <div class="style-scritpt" id="style-script">
+                <h2>Style and Scripting</h2>
+                <p>CSS styles are added using the &lt;style&gt; tag. In this example, the &lt;h1&gt; element is styled to have a blue color, and paragraphs (&lt;p&gt;) are given a font size of 18 pixels. JavaScript is embedded with the &lt;script&gt; tag, displaying an alert.</p>
+
+                <div class="code-container">
+                    &lt;style&gt;
+                    h1 {
+                        color: blue;
+                    }
+
+                    p {
+                        font-size: 18px;
+                    }
+                    &lt;/style&gt;
+
+                    &lt;script&gt;
+                    alert("Hello, World!");
+                    &lt;/script&gt;
+                </div>
+            </div>
         </div>
     </div>
 </body>

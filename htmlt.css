@@ -9,6 +9,15 @@ body {
     width: 100%;
 }
 
+::-webkit-scrollbar {
+    background-color: #222;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: tomato;
+}
+
 /* Theme changer */
 
 :root {
@@ -18,20 +27,19 @@ body {
 
 .switch-theme {
     --primary-color: black;
-    --secondary-color: white;
+    --secondary-color: #dddddd;
 }
 
 /* code container */
 
 .code-container {
     background-color: var(--secondary-color);
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     padding: 10px;
     margin: 10px 0;
     overflow-x: auto; 
     white-space: pre-line   ;
 }
-
 code {
     font-family: 'Courier New', monospace;
     color: var(--primary-color);
@@ -64,15 +72,7 @@ code {
 /* main divs */
 
 
-.html-elements {
-    padding-top: 100px;
-}
-
-.html-tags {
-    padding-top: 100px;
-}
-
-.html-att {
+.main div:not(.code-container) {
     padding-top: 100px;
 }
 
@@ -206,7 +206,9 @@ nav a h1 {
     height: 100%;
     margin-top: 100px;
     border-right: #555 1px solid;
-    padding: 25px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-bottom: 100px;
 }
 
 .left-nav ul {
@@ -215,22 +217,25 @@ nav a h1 {
 
 .left-nav li {
     list-style: none;
-    margin-bottom: 30px;
+    padding: 20px;
 }
 
-.left-nav a {
-    text-decoration: none;
-    color: white;
-    font-size: 25px;
-    padding: 10px;
-}
-
-.left-nav a:hover {
+.left-nav li:hover {
     background-color: tomato;
-    border-radius: 30px;
     color: #222;
     transition: .5s;
 }
+
+.left-nav a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+
 
 /* main content */
 
@@ -238,7 +243,6 @@ nav a h1 {
     width: 80%;
     background-color: var(--secondary-color);
     height: 100%;
-    margin-top: 100px;
     margin-left: 20%;
     padding: 100px;
     color: var(--primary-color);
