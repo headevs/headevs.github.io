@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .code-container {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--cc-border);
+    padding: 10px;
+    margin: 10px 0;
+    overflow-x: auto; 
+    white-space: pre-line   ;
+    }
+
+    code {
+        font-family: 'Courier New', monospace;
+        color: var(--primary-color);
+    }
+    </style>
+</head>
+<body>
+    <div class="code-container">
+        <code>
+            &lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;
+            &lt;img src="image.jpg" alt="A descriptive image"&gt;
+        </code>
+    </div>
+</body>
+
+<script>
+    function toggleCodeContainer() {
+    var codeContainer = document.getElementById("codeContainer");
+    var maxHeight = codeContainer.style.maxHeight;
+
+    if (maxHeight === "0px" || maxHeight === "") {
+        codeContainer.style.display = "block";
+        codeContainer.style.maxHeight = codeContainer.scrollHeight + "px";
+    } else {
+        codeContainer.style.maxHeight = "0";
+        setTimeout(function() {
+            codeContainer.style.display = "none";
+        }, 300); // Set a fixed duration for the closing animation (300ms in this example)
+    }
+}
+</script>
+</html>

@@ -362,3 +362,51 @@ a.list:hover {
   border: 1px solid rgba(255, 0, 88, 0.4);
   box-shadow: 0 1px 15px rgba(1, 1, 1, 0.2);
 }
+
+@media screen and (max-width: 600px) {
+
+  /* landing page */
+  .land {
+    display: block;
+  }
+
+  .bg{
+    color: aqua;
+    height: 100vh;
+    padding-top: 0;
+  }
+  
+  
+  
+  .left-bg {
+    width: 100%;
+    height: 60vh;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .left-bg h1{
+    color: wheat;
+    font-size: 30px;
+  }
+  
+  .left-bg p {
+      display: block;
+      color: azure;
+      font-size: 20px;
+      margin-top: -25px;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+  
+  .right-bg {
+    height: 50vh;
+    width: 100%;
+    padding-right: 0;
+  }
+  
+  .right-bg img {
+    height: auto;
+    width: 80%;
+  }
+}

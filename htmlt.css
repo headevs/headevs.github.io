@@ -7,6 +7,7 @@
 body {
     font-family: 'Nunito', sans-serif;
     width: 100%;
+
 }
 
 ::-webkit-scrollbar {
@@ -23,50 +24,62 @@ body {
 :root {
     --primary-color: white;
     --secondary-color: #222; 
+    --sidenav: block;
+    --main-width: 80%;
+    --main-margin: 20%;
+    --body-display: flex;
+    --cc-border: #ccc;
+    --transition-duration-cacc: 0.3s;
+}
 }
 
 .switch-theme {
     --primary-color: black;
     --secondary-color: #dddddd;
+    --cc-border: #333;
+}
+
+.sidenav-open {
+    --sidenav: none;
+    --main-width: 100%;
+    --main-margin: 0;
+    --body-display: block;
 }
 
 /* code container */
 
 .code-container {
+    display: none; /* Hide by default */
+    max-height: 0;
+    overflow: hidden;
     background-color: var(--secondary-color);
-    border: 2px solid #ccc;
+    border: 1px solid var(--cc-border);
     padding: 10px;
     margin: 10px 0;
     overflow-x: auto; 
-    white-space: pre-line   ;
+    white-space: pre-line;
+    transition: max-height var(--transition-duration-cacc);
 }
+
 code {
     font-family: 'Courier New', monospace;
     color: var(--primary-color);
 }
 
-/* output button */
-
-.output-button {
-    margin: 20px;
-    padding: 10px;
-}
-
-.output-button a {
+.accordion-button {
     background-color: tomato;
-    text-decoration: none;
-    font-size: 30px;
-    color: #222;
-    font-weight: bold;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 50px;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
 }
 
-.output-button a:hover {
-    background-color: black;
-    color: tomato;
-    border: tomato 1px solid;
+.active, .accordion-button:hover {
+    background-color: #333;
+    color: white;
 }
 
 /* main divs */
@@ -79,7 +92,7 @@ code {
 /* main web */
 
 .body {
-    display: flex;
+    display: var(--body-display);
     align-items: stretch;
     justify-content: space-between;
 }
@@ -100,7 +113,6 @@ nav {
 
 .darkmode-container {
     position: relative;
-    margin-left: 150px;
 }
 
 .darkmode-container button {
@@ -136,12 +148,18 @@ nav a h1 {
     font-size: 45px;
 }
 
-.dropdown {
-    position: relative;
-    margin-right: 150px;
+/* left navigation bar */
+
+.active-link {
+    background-color: tomato;
+    border-left: red 20px solid;
 }
 
-.dropdown button {
+.sidenav-button {
+    position: relative;
+}
+
+.sidenav-button button {
     color: tomato;
     padding: 5px;
     width: 80px;
@@ -151,55 +169,21 @@ nav a h1 {
     background: none;
 }
 
-.dropdown button:hover {
-    cursor: pointer;
-    color: var(--primary-color);
-}
-
-.dropdown-icon {
+.sidenav-icon {
     font-size: 50px;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
 }
 
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    left: 0;
-    top: calc(100% + .25rem);
-    min-width: 150px;
-    min-height: 110px;
-    background-color: #333;
-    padding: 15px;
-    border-radius: 10px;
-
+.sidenav-button button:hover {
+    color: white;
+    cursor: pointer;
 }
 
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-.dropdown-menu a {
-    text-decoration: none;
-    color: var(--primary-color);
-    padding: 20px;
-    font-size: 25px;
-}
-
-.dropdown-menu a:hover {
-    color: grey;
-}
-
-.dropdown-menu ul li {
-    list-style: none;
-}
-
-.left-nav-res {
-    display: none;
-}
-
-
-/* left navigation bar */
 
 .body .left-nav {
+    display: var(--sidenav);
     width: 20%;
     background-color: #222;
     position: fixed;
@@ -235,15 +219,13 @@ nav a h1 {
     width: 100%;
 }
 
-
-
 /* main content */
 
 .main {
-    width: 80%;
+    width: var(--main-width);
     background-color: var(--secondary-color);
     height: 100%;
-    margin-left: 20%;
+    margin-left: var(--main-margin);
     padding: 100px;
     color: var(--primary-color);
     padding-top: 100px;
@@ -273,10 +255,48 @@ img.htmlt-tag-img {
 
 @media screen and (max-width: 600px) {
 
+    :root {
+        --sidenav: none;
+        --main-width: 100%;
+        --main-margin: 0;
+        --body-display: block;
+        --sidenav-pos: relative;
+    }
+
+    .sidenav-open {
+        --sidenav: block;
+        --main-width: 100%;
+        --main-margin: 0;
+        --body-display: block;
+        --sidenav-pos: absolute;
+    }    
+
     /* top navbar */
 
     nav {
         height: 65px;
+    }
+
+    .sidenav-button {
+        position: relative;
+    }
+    
+    .sidenav-button button {
+        padding: 5px;
+        width: 65px;
+        height: 65px;
+    }
+    
+    .sidenav-icon {
+        font-size: 30px;
+        height: 100%;
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .sidenav-button button:hover {
+        color: white;
+        cursor: pointer;
     }
 
     .darkmode-container {
@@ -323,33 +343,64 @@ img.htmlt-tag-img {
         color: white;
     }
     
-    .left-nav-res {
-        display: block;
-        border-top: white 1px solid;
-    }
-
-    
     /* left navbar */
     .body {
-        display: block;
+        display: var(--body-display);
         align-items: normal;
     }
 
     .body .left-nav {
-        display: none;
-        width: 0;
+        display: var(--sidenav);
+        width: 60%;
+        background-color: #222;
+        position: fixed;
+        height: 100%;
+        margin-top: 65px;
+        border-right: #555 1px solid;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding-bottom: 100px;
     }
+    
+    .left-nav ul {
+        align-items: center;
+    }
+    
+    .left-nav li {
+        list-style: none;
+        padding: 10px;
+    }
+    
+    .left-nav li:hover {
+        background-color: tomato;
+        color: #222;
+        transition: .5s;
+    }
+    
+    .left-nav a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        padding: 8px;
+        width: 100%;
+    }
+    
 
     /* main-content */
 
     .body .main {
-        width: 100%;
+        width: var(--main-width);
         height: 100%;
         margin-top: 0;
-        margin-left: 0;
+        margin-left: var(--main-margin);
         padding: 30px;
         color: var(--primary-color);
         padding-top: 100px;
+    }
+
+    .main div:not(.code-container) {
+        padding-top: 0;
     }
 
     .body .main h1, h2, h3, h4, h5, h6 {

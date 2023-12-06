@@ -16,88 +16,69 @@
 
 <body>
     <nav>
-        <div class="darkmode-container">
-            <button class="dmButton" id="dmButton"><i class="fas fa-adjust darkmode-icon"></i></button>
+        <div class="sidenav-button">
+            <button><i class="fas fa-bars sidenav-icon" id="snButton"></i></button>
         </div>
         <a href="#main">
             <h1>HTML Tutorial</h1>
         </a>
-        <div class="dropdown">
-            <button><i class="fas fa-bars dropdown-icon"></i></button>
-            <div class="dropdown-menu">
-                <ul>
-                    <li>
-                        <a href="./index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">HTML</a>
-                    </li>
-                    <li>
-                        <a href="">CSS</a>
-                    </li>
-                    <li>
-                        <a href="">JavaScript</a>
-                    </li>
-                </ul>
-                <ul class="left-nav-res">
-                    <li>
-                        <a href="#html-elements">HTML Elements</a>
-                    </li>
-                    <li>
-                        <a href="#html-tags">HTML Tags</a>
-                    </li>
-                    <li>
-                        <a href="#html-att">HTML Attributes</a>
-                    </li>
-                    <li>
-                        <a href="">HTML CONTENT</a>
-                    </li>
-                    <li>
-                        <a href="">HTML CONTENT</a>
-                    </li>
-
-                </ul>
-            </div>
+        <div class="darkmode-container">
+            <button class="dmButton" id="dmButton"><i class="fas fa-adjust darkmode-icon"></i></button>
         </div>
     </nav>
     <div class="body">
-        <div class="left-nav">
+        <div class="left-nav" id="leftNav">
             <ul>
                 <li>
-                    <a href="#html-elements">HTML Elements</a>
+                    <a href="./index.html " class="links">Home</a>
+                </li>
+                <li class="active-link">
+                    <a href="#" class="links">HTML</a>
                 </li>
                 <li>
-                    <a href="#html-tags">HTML Tags</a>
+                    <a href="./csst.html" class="links">CSS</a>
                 </li>
                 <li>
-                    <a href="#html-att">HTML Attributes</a>
+                    <a href="" class="links">JavaScript</a>
+                </li>
+            </ul>
+            <hr>
+            <ul id="sidebar">
+                <li>
+                    <a href="#html-elements" class="links">HTML Elements</a>
                 </li>
                 <li>
-                    <a href="#document-structure">Document Structures</a>
+                    <a href="#html-tags" class="links">HTML Tags</a>
                 </li>
                 <li>
-                    <a href="text-formatting">Text Formatting</a>
+                    <a href="#html-att" class="links">HTML Attributes</a>
                 </li>
                 <li>
-                    <a href="#links-nav">Links and Navigation</a>
+                    <a href="#document-structure" class="links">Document Structures</a>
                 </li>
                 <li>
-                    <a href="#lists">Lists</a>
+                    <a href="#text-formatting" class="links">Text Formatting</a>
                 </li>
                 <li>
-                    <a href="#tables">Tables</a>
+                    <a href="#links-nav" class="links">Links and Navigation</a>
                 </li>
                 <li>
-                    <a href="#forms">Forms</a>
+                    <a href="#lists" class="links">Lists</a>
                 </li>
                 <li>
-                    <a href="#multimedia">Multimedia</a>
+                    <a href="#tables" class="links">Tables</a>
                 </li>
                 <li>
-                    <a href="#semanic">Semanic Elements</a>
+                    <a href="#forms" class="links">Forms</a>
                 </li>
                 <li>
-                    <a href="#style-script">Style and Scripting</a>
+                    <a href="#multimedia" class="links">Multimedia</a>
+                </li>
+                <li>
+                    <a href="#semanic" class="links">Semanic Elements</a>
+                </li>
+                <li>
+                    <a href="#style-script" class="links">Style and Scripting</a>
                 </li>
 
             </ul>
@@ -145,8 +126,10 @@
 
                 <p>You can also look at HTML, CSS, and JavaScript this way: HTML is the structure of a house, CSS is the
                     interior and exterior decor, and JavaScript is the electricity, water system, and many other
-                    functional features that make the house livable.</p>
-                <div class="code-container">
+                    functional features that make the house livable.
+                </p>
+                <button class="accordion-button" onclick="toggleCodeContainer(1)">Click for Example   class="fa-solid fa-caret-down"></i></button>
+                <div class="code-container" id="codeContainer1">
                     <code>
                         &lt;!DOCTYPE html&gt;
                         &lt;html&gt;
@@ -295,8 +278,8 @@
                 </p>
 
                 <h2><b>This is an example of html file that includes all the common tags</b></h2>
-
-                <div class="code-container">
+                <button class="accordion-button" onclick="toggleCodeContainer(2)">Click for Example  <i class="fa-solid fa-caret-down"></i></button>
+                <div class="code-container" id="codeContainer2">
                     <code>
                         &lt;!DOCTYPE html&gt;
                         &lt;html&gt;
@@ -363,10 +346,6 @@
                     </code>
 
                 </div>
-
-                <div class="output-button">
-                    <a href="./sample-tag.html">Output</a>
-                </div>
             </div>
             <hr>
             <div class="html-att" id="html-att">
@@ -404,8 +383,8 @@
                 </p>
 
                 <h2><b>This is an example of html file that includes all the common Attributes</b></h2>
-
-                <div class="code-container">
+                <button class="accordion-button" onclick="toggleCodeContainer(3)">Click for Example  <i class="fa-solid fa-caret-down"></i></button>
+                <div class="code-container" id="codeContainer3">
                     <code>
                         &lt;!DOCTYPE html&gt;
                         &lt;html&gt;
@@ -468,19 +447,14 @@
                     
                         &lt;/html&gt;
                     </code>
-
-                </div>
-
-                <div class="output-button"><a href="sample-att.html">Output</a>
-                </div>
             </div>
             <hr>
             <div class="document-structure" id="document-structure">
                 <h2>Document Structures</h2>
 
                 <p>This example illustrates the importance of document structure. The &lt;header&gt; contains the main heading, while the &lt;nav&gt; section holds navigation links in an unordered list. Sections (&lt;section&gt;) with unique IDs represent distinct parts of the content, and a &lt;footer&gt; contains copyright information.</p>
-                
-                <div class="code-container">
+                <button class="accordion-button" onclick="toggleCodeContainer(4)">Click for Example  <i class="fa-solid fa-caret-down"></i></button>
+                <div class="code-container" id="codeContainer4">
                     <code>
                         &lt;!DOCTYPE html&gt;
                         &lt;html&gt;
@@ -517,9 +491,11 @@
             <hr>
             <div class="text-formatting" id="text-formatting">
                 <h2>Text Formatting</h2>
-                <p>HTML allows for text formatting using tags like &lt;em&gt; for emphasis (italic) and &lt;strong&gt; for strong emphasis (bold). These tags convey semantic meaning, helping browsers and accessibility tools interpret the content correctly.</p>
-
-                <div class="code-container">
+                <p>
+                    HTML allows for text formatting using tags like &lt;em&gt; for emphasis (italic) and &lt;strong&gt; for strong emphasis (bold). These tags convey semantic meaning, helping browsers and accessibility tools interpret the content correctly.
+                </p>
+                <button class="accordion-button" onclick="toggleCodeContainer(5)">Click for Example  <i class="fa-solid fa-caret-down"></i></button>
+                <div class="code-container" id="codeContainer5">
                     <code>
                         &lt;h1&gt;Main Heading&lt;/h1&gt;
                         &lt;p&gt;This is a &lt;em&gt;paragraph&lt;/em&gt; with emphasized text. The &lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt; tag is used for emphasizing text, typically rendering it in italics. Similarly, the &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; tag can be used for strong emphasis, rendering text in bold.&lt;/p&gt;
@@ -530,8 +506,8 @@
             <div class="links-nav" id="links-nav">
                 <h2>Links and Navigation</h2>
                 <p>Links are created with the &lt;a&gt; tag and the href attribute. In this example, it links to "https://www.example.com." Images are embedded using the &lt;img&gt; tag, with the src attribute specifying the image source and alt providing alternative text for accessibility.</p>
-
-                <div class="code-container">
+                <button class="accordion-button" onclick="toggleCodeContainer(6)">Click for Example  <i class="fa-solid fa-caret-down"></i></button>
+                <div class="code-container" id="codeContainer6">
                     <code>
                         &lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;
                         &lt;img src="image.jpg" alt="A descriptive image"&gt;
@@ -542,8 +518,8 @@
             <div class="lists" id="lists">
                 <h2>Lists</h2>
                 <p>Lists in HTML can be either unordered (&lt;ul&gt;) or ordered (&lt;ol&gt;). List items are denoted by the &lt;li&gt; tag. This example showcases both types of lists with simple items.</p>
-
-                <div class="code-container">
+                <button class="accordion-button" onclick="toggleCodeContainer(7)">Click for Example  <i class="fa-solid fa-caret-down"></i></button>
+                <div class="code-container" id="codeContainer7">
                     <code>
                         &lt;ul&gt;
                             &lt;li&gt;Item 1&lt;/li&gt;
@@ -561,8 +537,8 @@
             <div class="tables" id="tables">
                 <h2>Tables</h2>
                 <p>HTML tables are created using the &lt;table&gt; tag. Tables consist of rows (&lt;tr&gt;), header cells (&lt;th&gt;), and data cells (&lt;td&gt;). This example shows a basic table with headers and data.</p>
-
-                <div class="code-container">
+                <button class="accordion-button" onclick="toggleCodeContainer(8)">Click for Example  <i class="fa-solid fa-caret-down"></i></button>
+                <div class="code-container" id="codeContainer8">
                     <code>
                         &lt;table&gt;
                         &lt;tr&gt;
@@ -581,8 +557,8 @@
             <div class="formas" id="forms">
                 <h2>Forms</h2>
                 <p>Forms are integral for user input. The &lt;form&gt; tag contains input elements like text and password fields. The label tag is associated with input fields for better accessibility.</p>
-
-                <div class="code-container">
+                <button class="accordion-button" onclick="toggleCodeContainer(9)">Click for Example  <i class="fa-solid fa-caret-down"></i></button>
+                <div class="code-container" id="codeContainer9">
                     <code>
                         &lt;form action="/submit" method="post"&gt;
                         &lt;label for="username"&gt;Username:&lt;/label&gt;
@@ -601,8 +577,8 @@
                 <h2>Multimedia</h2>
                 <p>Multimedia elements like &lt;audio&gt; and &lt;video&gt; allow embedding audio and video. The controls attribute provides playback controls, and the &lt;source&gt; tag specifies the media source and type.
                 </p>
-
-                <div class="code-container">
+                <button class="accordion-button" onclick="toggleCodeContainer(10)">Click for Example  <i class="fa-solid fa-caret-down"></i></button>
+                <div class="code-container" id="codeContainer10">
                     <code>
                         &lt;audio controls&gt;
                         &lt;source src="audio.mp3" type="audio/mp3"&gt;
@@ -621,8 +597,8 @@
                 <h2>Semanic Elements</h2>
                 <p>Semantic elements like &lt;header&gt;, &lt;article&gt;, &lt;aside&gt;, and &lt;footer&gt; enhance document structure. They provide context to different parts of the content, aiding in accessibility and SEO.
                 </p>
-
-                <div class="code-container">
+                <button class="accordion-button" onclick="toggleCodeContainer(11)">Click for Example  <i class="fa-solid fa-caret-down"></i></button>
+                <div class="code-container" id="codeContainer11">
                     <code>
                         &lt;header&gt;
                         &lt;h1&gt;Website Header&lt;/h1&gt;
@@ -647,8 +623,8 @@
             <div class="style-scritpt" id="style-script">
                 <h2>Style and Scripting</h2>
                 <p>CSS styles are added using the &lt;style&gt; tag. In this example, the &lt;h1&gt; element is styled to have a blue color, and paragraphs (&lt;p&gt;) are given a font size of 18 pixels. JavaScript is embedded with the &lt;script&gt; tag, displaying an alert.</p>
-
-                <div class="code-container">
+                <button class="accordion-button" onclick="toggleCodeContainer(12)">Clock for Example<i class="fa-solid fa-caret-down"></i></button>
+                <div class="code-container" id="codeContainer12">
                     &lt;style&gt;
                     h1 {
                         color: blue;
@@ -666,7 +642,8 @@
             </div>
         </div>
     </div>
+    <script defer src="./htmlt.js"></script>
 </body>
-<script src="./htmlt.js"></script>
+
 
 </html>
