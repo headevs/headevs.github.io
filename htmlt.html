@@ -33,7 +33,7 @@
                     <a href="./index.html " class="links">Home</a>
                 </li>
                 <li class="active-link">
-                    <a href="#" class="links">HTML</a>
+                    <a href="#html-main" class="links">HTML</a>
                 </li>
                 <li>
                     <a href="./csst.html" class="links">CSS</a>
@@ -42,7 +42,6 @@
                     <a href="" class="links">JavaScript</a>
                 </li>
             </ul>
-            <hr>
             <ul id="sidebar">
                 <li>
                     <a href="#html-elements" class="links">HTML Elements</a>
@@ -173,7 +172,6 @@
                     </li>
                 </ul>
             </div>
-            <hr>
             <div class="html-elements" id="html-elements">
                 <h2>HTML Elements</h2>
                 <p>
@@ -214,7 +212,6 @@
                     specific purpose and contributes to the overall structure and layout of a webpage.
                 </p>
             </div>
-            <hr>
             <div class="html-tags" id="html-tags">
                 <h2><b>HTML Tags</b></h2>
                 <p>Since HTML defines the markup for a particular web page, you'll want the text, images, or other
@@ -347,7 +344,6 @@
 
                 </div>
             </div>
-            <hr>
             <div class="html-att" id="html-att">
                 <h2><b>HTML Attributes</b></h2>
                 <p>
@@ -448,7 +444,6 @@
                         &lt;/html&gt;
                     </code>
             </div>
-            <hr>
             <div class="document-structure" id="document-structure">
                 <h2>Document Structures</h2>
 
@@ -488,7 +483,6 @@
                 </div>
 
             </div>
-            <hr>
             <div class="text-formatting" id="text-formatting">
                 <h2>Text Formatting</h2>
                 <p>
@@ -498,11 +492,10 @@
                 <div class="code-container" id="codeContainer5">
                     <code>
                         &lt;h1&gt;Main Heading&lt;/h1&gt;
-                        &lt;p&gt;This is a &lt;em&gt;paragraph&lt;/em&gt; with emphasized text. The &lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt; tag is used for emphasizing text, typically rendering it in italics. Similarly, the &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; tag can be used for strong emphasis, rendering text in bold.&lt;/p&gt;
+                        &lt;p&gt;This is a &lt;em&gt;paragraph&lt;/em&gt; with emphasized text. The &lt;em&gt; tag is used for emphasizing text, typically rendering it in italics. Similarly, the &lt;strong&gt; tag can be used for strong emphasis, rendering text in bold.&lt;/p&gt;
                     </code>
                 </div>
             </div>
-            <hr>
             <div class="links-nav" id="links-nav">
                 <h2>Links and Navigation</h2>
                 <p>Links are created with the &lt;a&gt; tag and the href attribute. In this example, it links to "https://www.example.com." Images are embedded using the &lt;img&gt; tag, with the src attribute specifying the image source and alt providing alternative text for accessibility.</p>
@@ -514,7 +507,6 @@
                     </code>
                 </div>
             </div>
-            <hr>
             <div class="lists" id="lists">
                 <h2>Lists</h2>
                 <p>Lists in HTML can be either unordered (&lt;ul&gt;) or ordered (&lt;ol&gt;). List items are denoted by the &lt;li&gt; tag. This example showcases both types of lists with simple items.</p>
@@ -533,7 +525,6 @@
                     </code>
                 </div>
             </div>
-            <hr>
             <div class="tables" id="tables">
                 <h2>Tables</h2>
                 <p>HTML tables are created using the &lt;table&gt; tag. Tables consist of rows (&lt;tr&gt;), header cells (&lt;th&gt;), and data cells (&lt;td&gt;). This example shows a basic table with headers and data.</p>
@@ -553,7 +544,6 @@
                     </code>
                 </div>
             </div>
-            <hr>
             <div class="formas" id="forms">
                 <h2>Forms</h2>
                 <p>Forms are integral for user input. The &lt;form&gt; tag contains input elements like text and password fields. The label tag is associated with input fields for better accessibility.</p>
@@ -572,7 +562,6 @@
                     </code>
                 </div>
             </div>
-            <hr>
             <div class="multimedia" id="multimedia">
                 <h2>Multimedia</h2>
                 <p>Multimedia elements like &lt;audio&gt; and &lt;video&gt; allow embedding audio and video. The controls attribute provides playback controls, and the &lt;source&gt; tag specifies the media source and type.
@@ -592,7 +581,6 @@
                     </code>
                 </div>
             </div>
-            <hr>
             <div class="semanic" id="semanic">
                 <h2>Semanic Elements</h2>
                 <p>Semantic elements like &lt;header&gt;, &lt;article&gt;, &lt;aside&gt;, and &lt;footer&gt; enhance document structure. They provide context to different parts of the content, aiding in accessibility and SEO.
@@ -619,25 +607,26 @@
                     </code>
                 </div>
             </div>
-            <hr>
-            <div class="style-scritpt" id="style-script">
+            <div class="style-script" id="style-script">
                 <h2>Style and Scripting</h2>
                 <p>CSS styles are added using the &lt;style&gt; tag. In this example, the &lt;h1&gt; element is styled to have a blue color, and paragraphs (&lt;p&gt;) are given a font size of 18 pixels. JavaScript is embedded with the &lt;script&gt; tag, displaying an alert.</p>
                 <button class="accordion-button" onclick="toggleCodeContainer(12)">Clock for Example<i class="fa-solid fa-caret-down"></i></button>
                 <div class="code-container" id="codeContainer12">
-                    &lt;style&gt;
-                    h1 {
-                        color: blue;
-                    }
-
-                    p {
-                        font-size: 18px;
-                    }
-                    &lt;/style&gt;
-
-                    &lt;script&gt;
-                    alert("Hello, World!");
-                    &lt;/script&gt;
+                    <code>
+                        &lt;style&gt;
+                        h1 {
+                            color: blue;
+                        }
+    
+                        p {
+                            font-size: 18px;
+                        }
+                        &lt;/style&gt;
+    
+                        &lt;script&gt;
+                        alert("Hello, World!");
+                        &lt;/script&gt;
+                    </code>
                 </div>
             </div>
         </div>

@@ -20,7 +20,7 @@
             <button><i class="fas fa-bars sidenav-icon" id="snButton"></i></button>
         </div>
         <a href="#main">
-            <h1>HTML Tutorial</h1>
+            <h1>CSS Tutorial</h1>
         </a>
         <div class="darkmode-container">
             <button class="dmButton" id="dmButton"><i class="fas fa-adjust darkmode-icon"></i></button>
@@ -35,8 +35,8 @@
                 <li>
                     <a href="./htmlt.html">HTML</a>
                 </li>
-                <li>
-                    <a href="">CSS</a>
+                <li class="active-link">
+                    <a href="#css-main">CSS</a>
                 </li>
                 <li>
                     <a href="">JavaScript</a>
@@ -45,48 +45,383 @@
             <hr>
             <ul>
                 <li>
-                    <a href="#html-elements">HTML Elements</a>
+                    <a href="#selectors" class="links">Selectors and Basic Styling</a>
                 </li>
                 <li>
-                    <a href="#html-tags">HTML Tags</a>
+                    <a href="#box-model" class="links">Box Model</a>
                 </li>
                 <li>
-                    <a href="#html-att">HTML Attributes</a>
+                    <a href="#layouts" class="links">Layouts</a>
                 </li>
                 <li>
-                    <a href="#document-structure">Document Structures</a>
+                    <a href="#responsive" class="links">Responsive Design</a>
                 </li>
                 <li>
-                    <a href="#text-formatting">Text Formatting</a>
+                    <a href="#transition" class="links">CSS Transitions and Animations</a>
                 </li>
                 <li>
-                    <a href="#links-nav">Links and Navigation</a>
+                    <a href="#transform" class="links">Transformations</a>
                 </li>
                 <li>
-                    <a href="#lists">Lists</a>
+                    <a href="#adv-selectors" class="links">Advanced Selectors</a>
                 </li>
                 <li>
-                    <a href="#tables">Tables</a>
+                    <a href="#variables" class="links">CSS Variables</a>
                 </li>
                 <li>
-                    <a href="#forms">Forms</a>
+                    <a href="#preprocessors" class="links">CSS Preprocessors</a>
                 </li>
                 <li>
-                    <a href="#multimedia">Multimedia</a>
+                    <a href="#practices" class="links">Best Practices</a>
                 </li>
                 <li>
-                    <a href="#semanic">Semanic Elements</a>
+                    <a href="#frameworks" class="links">CSS Frameworks</a>
                 </li>
                 <li>
-                    <a href="#style-script">Style and Scripting</a>
+                    <a href="#accessibility" class="links">CSS and Accessibility</a>
+                </li>
+                <li>
+                    <a href="#debugging" class="links">Debugging CSS</a>
+                </li>
+                <li>
+                    <a href="#features" class="links">CSS3 Features</a>
+                </li>
+                <li>
+                    <a href="#grid" class="links">CSS Grid Systems</a>
+                </li>
+                <li>
+                    <a href="#real-projects" class="links">CSS in Real Projects</a>
+                </li>
+                <li>
+                    <a href="#compatibility" class="links">Cross-Browser Compatibility</a>
+                </li>
+                <li>
+                    <a href="#performance" class="links">CSS and Performance</a>
+                </li>
+                <li>
+                    <a href="#version" class="links">Version Control for CSS</a>
                 </li>
 
             </ul>
 
         </div>
         <div class="main" id="main">
-            <div class="html-main" id="html-main">
-                
+            <div class="css-main" id="css-main">
+                <h2>
+                    Introduction to CSS
+                </h2>
+                <P>
+                    Cascading Style Sheets (CSS) is a powerful styling language integral to web development. Its primary purpose is to enhance the visual presentation of HTML documents by describing the layout, design, and formatting. By separating the structure (HTML) and presentation (CSS) layers, web developers can create responsive and visually appealing user interfaces. CSS achieves this by applying styles, such as colors, fonts, and positioning, to HTML elements. Integrating CSS into web projects is done through the &lt;style&gt; tag within the HTML document's &lt;head&gt;, allowing for a clean and modular development approach.
+
+                    CSS was developed by W3C (World Wide Web Consortium) in 1996 for a rather simple reason. HTML element was not designed to have tags that would help format the page. You were only supposed to write the markup for the web page.
+
+                    Cascading Style Sheets, commonly abbreviated as CSS, is a cornerstone technology in web development that plays a pivotal role in shaping the visual landscape of online content. This essay delves into the multifaceted dimensions of CSS, its origins, fundamental principles, and its profound impact on the presentation layer of HTML documents.
+                    
+                    CSS emerged in the late 1990s as a solution to the escalating complexity of styling web pages. Prior to its inception, HTML carried the burden of both structure and style, leading to cumbersome and less maintainable code. CSS, introduced as a separate language, facilitated the division of concerns by allowing developers to focus on the aesthetics and layout of web content independently from its structural markup.
+                    
+                    At its core, CSS serves as a styling language, providing a robust set of rules and properties to define the appearance of HTML elements. The primary objective is to create visually engaging and user-friendly interfaces. This involves specifying attributes such as colors, fonts, spacing, and positioning, all orchestrated through a syntax that prioritizes readability and flexibility.
+                    
+                    One of CSS's fundamental strengths lies in its ability to follow the cascade principle. The term "cascading" reflects the order of priority that styles take, allowing for a systematic application of rules. This hierarchy enables developers to define styles at different levels, such as inline styles within HTML elements, internal styles within the document's head using the &lt;style&gt; tag, and external styles through separate stylesheet files. The cascade ensures that styles are applied in a predictable manner, providing a balance between global consistency and localized customization.
+                    
+                    CSS also embraces the box model, a conceptual framework that encapsulates the layout of elements. Each HTML element is treated as a rectangular box, consisting of content, padding, border, and margin. This model empowers developers with granular control over the spacing, borders, and dimensions of elements, contributing to the overall structure and design of a webpage.
+                    
+                    In the realm of responsive design, CSS shines as an indispensable tool. Media queries, a CSS feature, enable developers to adapt styles based on the characteristics of the viewing device. This responsive approach ensures that web content seamlessly adjusts to different screen sizes, ranging from large desktop monitors to handheld devices, thereby enhancing the user experience across diverse platforms.
+                    
+                    Integration of CSS into web projects is a straightforward process. The &lt;style&gt; tag within the HTML document's &lt;head&gt; serves as the conduit for incorporating CSS rules. This modular approach fosters maintainability and facilitates collaboration by segregating structural markup from stylistic considerations. External CSS files further enhance reusability and organization, offering a clean and scalable architecture for development.
+                    
+                    In conclusion, Cascading Style Sheets embodies a transformative force in web development, providing an elegant and efficient mechanism for styling HTML documents. Its evolution over the years has propelled the creation of visually captivating and responsive websites. CSS stands as a testament to the synergy between functionality and aesthetics, playing a crucial role in shaping the digital landscape we navigate daily.
+
+
+                </p>
+            </div>
+            <div class="selectors" id="selectors">
+                <h2>Selectors and Basic Styling</h2>
+                <p>
+                    Selectors in CSS are patterns that target specific HTML elements, enabling the application of styles to them. This includes class, ID, and element selectors. For instance, to change the color of all paragraphs to red, the selector p is used. CSS styling involves properties like color, font-size, and text-align. These properties can be applied to selected elements, providing a versatile means of customizing the appearance of web content.
+                </p>
+                <button class="accordion-button" onclick="toggleCodeContainer(1)">Click for Example  <i class="fa-solid fa-caret-down"></i></button>
+                <div class="code-container" id="codeContainer1">
+                    <code>
+                        /* Selects all paragraphs and changes their color to red */
+                        p {
+                        color: red;
+                        }
+                    </code>
+                </div>
+            </div>
+            <div id="box-model">
+                <h2>Box Model</h2>
+                <p>
+                    The CSS box model is a fundamental concept that governs the layout of elements on a webpage. Each element is treated as a rectangular box, comprising content, padding, border, and margin. Developers can adjust these components to control spacing, borders, and overall element dimensions. For example, adding padding, border, and margin to a div element enhances control over its appearance and spacing in relation to other elements on the page.
+                </p>
+                <button class="accordion-button" onclick="toggleCodeContainer(2)">Click for Example  <i class="fa-solid fa-caret-down"></i></button>
+                <div class="code-container" id="codeContainer2">
+                    <code>
+                        /* Adds padding, border, and margin to a div */
+                        div {
+                        padding: 10px;
+                        border: 1px solid #000;
+                        margin: 10px;
+                        }
+                    </code>
+                </div>
+            </div>
+            <div id="layouts">
+                <h2>Layouts</h2>
+                <p>
+                    Layouts are crucial in web design for organizing and positioning elements. CSS offers tools like Flexbox and Grid layout for creating flexible and responsive designs. Flexbox provides a one-dimensional layout model, allowing for efficient distribution of space among items in a container. Grid layout, on the other hand, is a two-dimensional system that enables precise control over rows and columns, facilitating complex yet responsive designs.
+                </p>
+                <button class="accordion-button" onclick="toggleCodeContainer(3)">Click for Example  <i class="fa-solid fa-caret-down"></i></button>
+                <div class="code-container" id="codeContainer3">
+                    <code>
+                        /* Flexbox example */
+                        .container {
+                        display: flex;
+                        justify-content: space-between;
+                        }
+                    </code>
+                </div>
+            </div>
+            <div id="responsive">
+                <h2>Responsive Design</h2>
+                <p>
+                    Responsive design ensures that web applications look and function well on various devices and screen sizes. CSS accomplishes this through media queries, allowing developers to conditionally apply styles based on characteristics like screen width. For instance, adjusting font sizes or changing the layout to a single column on smaller screens enhances the user experience across different devices.
+                </p>
+                <button class="accordion-button" onclick="toggleCodeContainer(4)">Click for Example  <i class="fa-solid fa-caret-down"></i></button>
+                <div class="code-container" id="codeContainer4">
+                    <code>
+                        /* Responsive styles for screens smaller than 600px */
+                        @media screen and (max-width: 600px) {
+                        body {
+                            font-size: 14px;
+                        }
+                        }
+                    </code>
+                </div>
+            </div>
+            <div id="transition">
+                <h2>CSS Transitions and Animations</h2>
+                <p>
+                    CSS transitions and animations add dynamic behavior to web elements. Transitions smoothly interpolate property values over a specified duration, providing a polished feel to interactive elements. Animations, defined using keyframes, enable more complex and customized motion effects. For example, a button changing color on hover showcases the simplicity and effectiveness of CSS transitions.
+                </p>
+                <button class="accordion-button" onclick="toggleCodeContainer(5)">Click for Example  <i class="fa-solid fa-caret-down"></i></button>
+                <div class="code-container" id="codeContainer5">
+                    <code>
+                        /* Transition on hover */
+                        button {
+                        transition: background-color 0.3s ease;
+                        }
+                        button:hover {
+                        background-color: #3498db;
+                        }
+                    </code>
+                </div>
+            </div>
+            <div id="transform">
+                <h2>Transformations</h2>
+                <p>
+                    Transformations in CSS, including translate, rotate, and scale, manipulate the position and appearance of elements. These transformations are applied using the transform property. For instance, rotating a div by 45 degrees can be achieved with a simple CSS declaration, offering a visually engaging way to present content.
+                </p>
+                <button class="accordion-button" onclick="toggleCodeContainer(6)">Click for Example  <i class="fa-solid fa-caret-down"></i></button>
+                <div class="code-container" id="codeContainer6">
+                    <code>
+                        /* Rotate a div */
+                        .box {
+                        transform: rotate(45deg);
+                        }
+                    </code>
+                </div>
+            </div>
+            <div id="selectors">
+                <h2>Advanced Selectors</h2>
+                <p>
+                    CSS supports advanced selectors such as attribute selectors and pseudo-classes, providing more granular control over styling. Attribute selectors target elements based on attribute values, while pseudo-classes like :hover allow for styling in response to user actions. Using these selectors enhances the precision and specificity of style rules.
+                </p>
+                <button class="accordion-button" onclick="toggleCodeContainer(7)">Click for Example  <i class="fa-solid fa-caret-down"></i></button>
+                <div class="code-container" id="codeContainer7">
+                    <code>
+                        /* Select input with a type of text */
+                        input[type="text"] {
+                        border: 1px solid #ccc;
+                        }
+                    </code>
+                </div>
+            </div>
+            <div id="variables">
+                <h2>CSS Variables</h2>
+                <p>
+                    CSS variables, also known as custom properties, enable the reuse of values throughout a stylesheet. Defined within the :root pseudo-class, variables offer a centralized and maintainable way to manage design constants. For instance, creating a variable for the main color and applying it to various elements ensures consistency and ease of updates across the entire stylesheet.
+                </p>
+                <button class="accordion-button" onclick="toggleCodeContainer(8)">Click for Example  <i class="fa-solid fa-caret-down"></i></button>
+                <div class="code-container" id="codeContainer8">
+                    <code>
+                        /* Define a variable */
+                        :root {
+                        --main-color: #3498db;
+                        }
+                        /* Use the variable */
+                        .element {
+                        color: var(--main-color);
+                        }
+                    </code>
+                </div>
+            </div>
+            <div id="preprocessors">
+                <h2>CSS Preprocessors</h2>
+                <p>
+                    Preprocessors like SASS or LESS extend the capabilities of CSS by introducing features like variables, nesting, and mixins. These tools enhance code organization and maintainability, allowing developers to write more modular and efficient stylesheets. In SASS, for example, a variable can be declared for the primary color, promoting consistency and ease of modification.
+                </p>
+                <button class="accordion-button" onclick="toggleCodeContainer(9)">Click for Example  <i class="fa-solid fa-caret-down"></i></button>
+                <div class="code-container" id="codeContainer9">
+                    <code>
+                        $primary-color: #3498db;
+                        .element {
+                        color: $primary-color;
+                        }
+                    </code>
+                </div>
+            </div>
+            <div id="practices">
+                <h2>Best Practices</h2>
+                <p>
+                    Best practices in CSS involve adopting conventions that enhance code readability, maintainability, and performance. Using meaningful class names, organizing styles modularly, and following methodologies like BEM (Block Element Modifier) contribute to a scalable and sustainable codebase. For instance, assigning a class name like .header to style header elements promotes clarity and consistency across the project.
+                </p>
+                <button class="accordion-button" onclick="toggleCodeContainer(10)">Click for Example  <i class="fa-solid fa-caret-down"></i></button>
+                <div class="code-container" id="codeContainer10">
+                    <code>
+                        /* Good practice: Use meaningful class names */
+                        .header {
+                        font-size: 24px;
+                        }
+                    </code>
+                </div>
+            </div>
+            <div id="frameworks">
+                <h2>CSS Frameworks</h2>
+                <p>
+                    CSS frameworks, such as Bootstrap and Tailwind CSS, provide pre-designed components and styles that accelerate web development. Bootstrap, for example, includes a responsive grid system, navigation bars, and styling for common HTML elements. Integrating these frameworks streamlines the development process and ensures a cohesive and visually appealing design without the need for extensive custom styling.
+                </p>
+                <button class="accordion-button" onclick="toggleCodeContainer(11)">Click for Example  <i class="fa-solid fa-caret-down"></i></button>
+                <div class="code-container" id="codeContainer11">
+                    <code>
+                        &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"&gt;
+                    </code>
+                </div>
+            </div>
+            <div id="accessibility">
+                <h2>CSS and Accessibility</h2>
+                <p>
+                    Accessibility in CSS involves designing styles that consider users with disabilities. This includes using ARIA (Accessible Rich Internet Applications) roles and attributes to enhance the accessibility of interactive elements. For instance, adding an aria-label attribute to a button with an "X" icon ensures that screen readers convey the button's purpose to users with visual impairments.
+                </p>
+                <button class="accordion-button" onclick="toggleCodeContainer(12)">Click for Example  <i class="fa-solid fa-caret-down"></i></button>
+                <div class="code-container" id="codeContainer12">
+                    <code>
+                        &lt;button aria-label="Close"&gt;X&lt;/button&gt;
+                    </code>
+                </div>
+            </div>
+            <div id="debugging">
+                <h2>Debugging CSS</h2>
+                <p>
+                    Debugging is an essential skill in web development, and CSS debugging involves identifying and fixing styling issues. Browser Developer Tools are invaluable for inspecting elements, modifying styles in real-time, and identifying the source of layout problems. Adding temporary styles, such as a red border, to highlight problematic elements simplifies the debugging process.
+                </p>
+                <button class="accordion-button" onclick="toggleCodeContainer(13)">Click for Example  <i class="fa-solid fa-caret-down"></i></button>
+                <div class="code-container" id="codeContainer13">
+                    <code>
+                        /* Debugging: Add a red border to highlight an element */
+                        .debug {
+                        border: 2px solid red;
+                        }
+                    </code>
+                </div>
+            </div>
+            <div id="features">
+                <h2>CSS3 Features</h2>
+                <p>
+                    CSS3 introduces a range of features that enhance the visual richness of web pages. Rounded corners, gradients, and box shadows are among these features. For instance, applying the border-radius property with a value like 10px imparts a rounded appearance to elements, adding a modern and polished aesthetic to the design.
+                </p>
+                <button class="accordion-button" onclick="toggleCodeContainer(14)">Click for Example  <i class="fa-solid fa-caret-down"></i></button>
+                <div class="code-container" id="codeContainer14">
+                    <code>
+                        /* Rounded corners */
+                        .box {
+                        border-radius: 10px;
+                        }
+                    </code>
+                </div>
+            </div>
+            <div id="grid">
+                <h2>CSS Grid Systems</h2>
+                <p>
+                    CSS Grid layout is a powerful tool for creating responsive grid-based designs. It allows developers to define both rows and columns, enabling precise control over the layout. For example, a grid container can be set to display three columns with equal widths, providing a flexible and responsive structure for content placement.
+                </p>
+                <button class="accordion-button" onclick="toggleCodeContainer(15)">Click for Example  <i class="fa-solid fa-caret-down"></i></button>
+                <div class="code-container" id="codeContainer15">
+                    <code>
+                        /* Grid container */
+                        .container {
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        }
+                    </code>
+                </div>
+            </div>
+            <div id="real-projects">
+                <h2>CSS in Real Projects</h2>
+                <p>
+                    Integrating CSS into real projects involves linking external stylesheets to HTML documents and organizing styles in a modular and maintainable manner. The separation of concerns between HTML, CSS, and JavaScript fosters collaboration among developers. Linking a CSS file to an HTML document, as demonstrated below, is a common practice:
+                </p>
+                <button class="accordion-button" onclick="toggleCodeContainer(16)">Click for Example  <i class="fa-solid fa-caret-down"></i></button>
+                <div class="code-container" id="codeContainer16">
+                    <code>
+                        &lt;!-- Link CSS file in HTML --&gt;
+                        &lt;link rel="stylesheet" href="styles.css"&gt;
+                    </code>
+                </div>
+            </div>
+            <div id="compatibility">
+                <h2>Cross-Browser Compatibility</h2>
+                <p>
+                    Achieving cross-browser compatibility involves addressing differences in how browsers render CSS. Vendor prefixes, such as -webkit- or -moz-, are used to ensure compatibility with specific browser implementations. For example, adding a box shadow to an element might require vendor prefixes to support various browsers:
+                </p>
+                <button class="accordion-button" onclick="toggleCodeContainer(17)">Click for Example  <i class="fa-solid fa-caret-down"></i></button>
+                <div class="code-container" id="codeContainer17">
+                    <code>
+                        /* Vendor prefix for box-shadow */
+                        .box {
+                        -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                        }
+                    </code>
+                </div>
+            </div>
+            <div id="performance">
+                <h2>
+                    CSS and Performance
+                </h2>
+                <p>
+                    Optimizing CSS for performance involves minimizing file sizes and employing techniques like critical CSS and lazy loading. Minification reduces the size of stylesheets, improving page load times. For instance, the following represents a minified CSS rule:
+                </p>
+                <button class="accordion-button" onclick="toggleCodeContainer(18)">Click for Example  <i class="fa-solid fa-caret-down"></i></button>
+                <div class="code-container" id="codeContainer18">
+                    <code>
+                        /* Minified CSS */
+                        .element{color:#3498db;}
+                    </code>
+                </div>
+            </div>
+            <div id="version">
+                <h2>Version Control for CSS</h2>
+                <p>
+                    Managing CSS in version control systems, such as Git, facilitates collaboration and enables tracking changes over time. Developers can commit changes, create branches, and revert to previous states as needed. For example, adding and committing changes to a CSS file is done through Git commands:
+                </p>
+                <button class="accordion-button" onclick="toggleCodeContainer(19)">Click for Example  <i class="fa-solid fa-caret-down"></i></button>
+                <div class="code-container" id="codeContainer19">
+                    <code>
+                        git add styles.css
+                        git commit -m "Add styles for header"
+                    </code>
+                </div>
             </div>
         </div>
     </div>

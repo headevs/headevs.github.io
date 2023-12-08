@@ -31,7 +31,6 @@ body {
     --cc-border: #ccc;
     --transition-duration-cacc: 0.3s;
 }
-}
 
 .switch-theme {
     --primary-color: black;
@@ -52,7 +51,7 @@ body {
     display: none; /* Hide by default */
     max-height: 0;
     overflow: hidden;
-    background-color: var(--secondary-color);
+    background-color: #111;
     border: 1px solid var(--cc-border);
     padding: 10px;
     margin: 10px 0;
@@ -63,7 +62,8 @@ body {
 
 code {
     font-family: 'Courier New', monospace;
-    color: var(--primary-color);
+    color: yellow;
+    font-size: 25px;
 }
 
 .accordion-button {
@@ -153,6 +153,11 @@ nav a h1 {
 .active-link {
     background-color: tomato;
     border-left: red 20px solid;
+}
+
+.active-link:hover {
+    border-left: red 60px solid;
+    transition: .5s;
 }
 
 .sidenav-button {
@@ -414,9 +419,11 @@ img.htmlt-tag-img {
         white-space: pre-line;
     }
 
-    /* output button */
+    /* Code Container */
     
-    .output-button a {
+    code {
+        font-family: 'Courier New', monospace;
+        color: yellow;
         font-size: 15px;
     }
     
