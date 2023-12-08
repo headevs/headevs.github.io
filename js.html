@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tutorial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="htmlt.css">
+</head>
+
+<body>
+    <nav>
+        <div class="sidenav-button">
+            <button><i class="fas fa-bars sidenav-icon" id="snButton"></i></button>
+        </div>
+        <a href="#main">
+            <h1>JavaScript Tutorial</h1>
+        </a>
+        <div class="darkmode-container">
+            <button class="dmButton" id="dmButton"><i class="fas fa-adjust darkmode-icon"></i></button>
+        </div>
+    </nav>
+    <div class="body">
+        <div class="left-nav">
+            <ul>
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./htmlt.html">HTML</a>
+                </li>
+                <li>
+                    <a href="#css-main">CSS</a>
+                </li>
+                <li class="active-link">
+                    <a href="js.html">JavaScript</a>
+                </li>
+            </ul>
+            <hr>
+            <ul>
+                <li>
+                    <a href="#statements" class="links">Statements</a>
+                </li>
+                <li>
+                    <a href="#single-line-comments" class="links">Single Line Comments</a>
+                </li>
+                <li>
+                    <a href="#multi-line-comments" class="links">Multi Line Comments</a>
+                </li>
+                <li>
+                    <a href="#variables" class="links"> Variables</a>
+                </li>
+                <li>
+                    <a href="#operators" class="links"> Operators</a>
+                </li>
+                <li>
+                    <a href="#assignment" class="links">Assignment</a>
+                </li>
+                <li>
+                    <a href="#data-types" class="links">Data Types</a>
+                </li>
+                <li>
+                    <a href="#function" class="links">Function</a>
+                </li>
+                <li>
+                    <a href="#object" class="links">Object</a>
+                </li>
+                <li>
+                    <a href="#string" class="links">String</a>
+                </li>
+                <li>
+                    <a href="#array" class="links">Array</a>
+                </li>
+                
+                    
+
+            </ul>
+
+        </div>
+        <div class="main" id="main">
+            <div class="css-main" id="css-main">
+                <h2>
+                    Introduction to JavaScript
+                </h2>
+                <P>
+                "JavaScript was initially created to make web pages alive”.
+                 JavaScript, the dynamic and versatile programming language,
+                 empowers you to bring your web pages to life with interactive features, seamless user experiences, 
+                 and endless possibilities. Let's embark on a journey to unlock the full potential of JavaScript and 
+                 elevate your coding skills.Modern JavaScript is a “safe” programming language. It does not provide low-level access to memory or the CPU, because it was initially created for browsers which do not require it.
+
+                </p>
+        </div>
+            <div class="statements" id="statements">
+                <h2>JavaScript Statements</h2>
+                <p>
+                    In JavaScript, a statement is a unit of code that performs a specific action. JavaScript programs 
+                    are composed of various statements that are executed sequentially or conditionally. Here are some 
+                    common types of JavaScript statements:
+                </p>
+                <button class="accordion-button" onclick="toggleCodeContainer(1)">Click for Example  <i class="fa-solid fa-caret-down"></i></button>
+                <div class="code-container" id="codeContainer1">
+                    <code>
+                    VARIABLE DECLARATION:
+                    let x;
+                    Declares a variable named x. Variables can be declared using let, const, or var (older version)
+
+                    VARIABLE ASSIGNMENT
+                    x = 5;
+                    Assigns the value 5 to the variable x.
+
+                    FUNCTION DECLARATION:                 
+                    function myFunction() {
+                    // code to be executed
+                    }Declares a function named myFunction.
+
+                    CONDITIONAL STATEMENTS (IF-ELSE):
+                    if (condition) {
+                    // code to be executed if the condition is true
+                    } else {
+                    // code to be executed if the condition is false
+                    }Executes different blocks of code based on a specified condition.
+
+                    LOOPS (FOR, WHILE):
+                    for loop:
+                    for (let i = 0; i < 5; i++) {
+                    // code to be executed in each iteration
+                    }
+
+                    WHILE LOOP:
+                    while (condition) {
+                    // code to be executed while the condition is true
+                    }Iterates through a block of code repeatedly.
+
+                    SWITCH STATEMENT:
+                    switch (expression) {
+                    case value1:
+                    // code to be executed if expression equals value1
+                    break;
+                    case value2:
+                    // code to be executed if expression equals value2
+                    break;
+                    default:
+                    // code to be executed if expression doesn't match any case
+                    }Executes different code blocks based on the value of an expression.
+
+                    TRY-CATCH STATEMENT (ERROR HANDLING):
+                    try {
+                    // code that might throw an error
+                    } catch (error) {
+                    // code to handle the error
+                    }Wraps code that might throw an error in a try block and provides a mechanism to handle the error in the catch block.
+
+                    BREAK AND CONTINUE:
+                    for (let i = 0; i < 10; i++) {
+                     if (i === 5) {
+                     break; // exits the loop when i equals 5
+                    }  // code to be executed in each iteration
+                    }break is used to exit a loop, and continue is used to skip the rest of the loop code for the current iteration.
+                    </code>
+                </div>
+            </div>
+            <div id="single-line-comments">
+                <h2>Single Line Comments</h2>
+                <p>
+                    Single line comments start with //.
+                    Any text between // and the end of the line will be ignored by JavaScript (will not be executed).
+                    This example uses a single-line comment before each code line:
+                </p>
+                <button class="accordion-button" onclick="toggleCodeContainer(2)">Click for Example  <i class="fa-solid fa-caret-down"></i></button>
+                <div class="code-container" id="codeContainer2">
+                    <code>
+                        // Change heading:
+                        document.getElementById("myH").innerHTML = "My First Page";
+
+                        // Change paragraph:
+                        document.getElementById("myP").innerHTML = "My first paragraph.";
+                    </code>
+                </div>
+
+            <div id="multi-line-comments">
+                <h2>Multi Line Comments</h2>
+                <p>
+                    Multi-line comments start with /* and end with */.
+                    Any text between /* and */ will be ignored by JavaScript.
+                    This example uses a multi-line comment (a comment block) to explain the code:
+                </p>
+                <button class="accordion-button" onclick="toggleCodeContainer(3)">Click for Example  <i class="fa-solid fa-caret-down"></i></button>
+                <div class="code-container" id="codeContainer3">
+                    <code>
+                        /*
+                        The code below will change
+                        the heading with id = "myH"
+                        and the paragraph with id = "myP"
+                        in my web page:
+                        */
+                        document.getElementById("myH").innerHTML = "My First Page";
+                        document.getElementById("myP").innerHTML = "My first paragraph.";
+                    </code>
+                </div>
+                <div id="variables">
+                    <h2>JavaScript Variables</h2>
+                    <p>
+                        Variables are Containers for Storing Data
+                        JavaScript Variables can be declared in 4 ways:
+                        
+                        Automatically
+                        Using var
+                        Using let
+                        Using const
+                    </p>
+                    <button class="accordion-button" onclick="toggleCodeContainer(4)">Click for Example  <i class="fa-solid fa-caret-down"></i></button>
+                    <div class="code-container" id="codeContainer4">
+                        <code>
+                            Automatically
+                            x = 5;
+                            y = 6;
+                            z = x + y;
+    
+                            Example using var
+                            var x = 5;
+                            var y = 6;
+                            var z = x + y;
+    
+                            Example using let
+                             let x = 5;
+                             let y = 6;
+                            let z = x + y;
+    
+                            Example using const
+                            const x = 5;
+                            const y = 6;
+                            const z = x + y;
+    
+                        </code>
+                    </div>
+                    <div id="operators">
+                        <h2>JavaScript Operators</h2>
+                        <p> 
+                        JavaScript operators are symbols or keywords that perform operations on operands.
+                         Operands can be variables, values, or expressions. Here are some common types of JavaScript 
+                         operators: 
+                        </p>
+                        <button class="accordion-button" onclick="toggleCodeContainer(5)">Click for Example  <i class="fa-solid fa-caret-down"></i></button>
+                        <div class="code-container" id="codeContainer5">
+                            <code>
+        1.	Arithmetic Operators:
+            + (Addition)
+        	- (Subtraction)
+        	* (Multiplication)
+        	/ (Division)
+        	% (Modulus, returns the remainder of a division)
+        Example:
+        let x = 10; let y = 3; let result = x + y; // result will be 13 
+        
+        2.	Assignment Operators:
+        	= (Assignment)
+        	+= (Addition assignment)
+        	-= (Subtraction assignment)
+        	*= (Multiplication assignment)
+        	/= (Division assignment)
+        Example:
+        let x = 5; x += 3; // x is now 8 (same as x = x + 3) 
+        
+        3.	Comparison Operators:
+        	== (Equality, type coercion)
+        	=== (Strict equality, checks both value and type)
+        	!= (Inequality, type coercion)
+        	!== (Strict inequality, checks both value and type)
+        	> (Greater than)
+        	< (Less than)
+        	>= (Greater than or equal to)
+        	<= (Less than or equal to)
+        Example:
+        let a = 5; let b = "5"; console.log(a == b); // true (equality, type coerced) console.log(a === b); // false (strict equality, different types) 
+        
+        4.	Logical Operators:
+        	&& (Logical AND)
+        	|| (Logical OR)
+        	! (Logical NOT)
+        Example:
+        let isTrue = true; let isFalse = false; console.log(isTrue && isFalse); // false (logical AND) console.log(isTrue || isFalse); // true (logical OR) console.log(!isTrue); // false (logical NOT) 
+        
+        5.	Unary Operators:
+        	+ (Unary plus, converts an operand to a number)
+    	- (Unary minus, negates an operand)
+        	++ (Increment)
+        	-- (Decrement)
+        typeof (Returns a string indicating the type of an operand)
+        Example:
+        let num = 5; console.log(-num); // -5 (unary minus) console.log(++num); // 6 (increment) console.log(typeof num); // "number" (type of operator) 
+        
+        6.	Ternary Operator (Conditional Operator):
+        	condition ? expr1 : expr2 (If the condition is true, returns expr1; otherwise, returns expr2)
+        Example:
+        let age = 20; let status = (age >= 18) ? "Adult" : "Minor";
+        
+                            </code>
+                        </div>
+            
+            <div id="assignment">
+                <h2>Assignment</h2>
+                <p>
+                 In JavaScript, assignment is the process of assigning a value to a variable. Variables are used to
+                  store and manage data in your programs. Here are examples of JavaScript assignment.
+                <button class="accordion-button" onclick="toggleCodeContainer(6)">Click for Example  <i class="fa-solid fa-caret-down"></i></button>
+                <div class="code-container" id="codeContainer6">
+                    <code>
+1.	Basic Assignment (=):
+let x = 10; // Assigns the value 10 to the variable x 
+
+2.	Addition Assignment (+=):
+let y = 5; y += 3; // Equivalent to y = y + 3; Result: y is now 8 
+
+3.	Subtraction Assignment (-=):
+let z = 7; z -= 2; // Equivalent to z = z - 2; Result: z is now 5 
+
+4.	Multiplication Assignment (*=):
+let a = 4; a *= 2; // Equivalent to a = a * 2; Result: a is now 8 
+
+5.	Division Assignment (/=):
+let b = 10; b /= 2; // Equivalent to b = b / 2; Result: b is now 5 
+
+6.	Modulus Assignment (%=):
+let c = 15; c %= 4; // Equivalent to c = c % 4; Result: c is now 3 
+
+7.	Exponentiation Assignment (**=) (ES6+):
+let d = 2; d **= 3; // Equivalent to d = d ** 3; Result: d is now 8 (2^3) 
+
+8.	Concatenation Assignment (+= with strings):
+let str = "Hello"; str += " World"; // Equivalent to str = str + " World"; Result: str is now "Hello World" 
+
+9.	Assignment Destructuring (ES6+):
+let [x, y] = [1, 2]; // Destructuring assignment // Now, x is 1 and y is 2 
+let { a, b } = { a: 5, b: 10 }; // Object destructuring assignment // Now, a is 5 and b is 10
+
+                    </code>
+                </div>
+            </div>
+            <div id="data-types">
+                <h2>Data Types</h2>
+                <p>
+                    JavaScript has several data types that are used to represent different kinds of values. Here are the main data types in JavaScript:
+
+                    Primitive Data Types:
+                    
+                    String: Represents text. Example: "Hello, World!".
+                    Number: Represents numeric values. Example: 42 or 3.14.
+                    Boolean: Represents true or false values.
+                    Null: Represents the absence of a value. Note that null is an assignment value that represents no
+                     value or no object.
+                    Undefined: Represents an uninitialized variable or a variable with no assigned value.
+                </p>
+                <button class="accordion-button" onclick="toggleCodeContainer(7)">Click for Example  <i class="fa-solid fa-caret-down"></i></button>
+                <div class="code-container" id="codeContainer7">
+                    <code>
+1.	Undefined:
+let text = "Hello"; let numberValue = 42; let isTrue = true; let noValue = null; let undefinedValue; 
+
+2.	Object Data Type:
+•	Object: Represents a collection of key-value pairs, where keys are strings and values can be any data type, including other objects.
+Example:
+let person = { name: "John", age: 30, isStudent: false }; 
+
+3.	Array Data Type:
+•	Array: Represents an ordered list of values. Arrays can contain elements of any data type.
+Example:
+let colors = ["red", "green", "blue"]; 
+
+4.	Function Data Type:
+•	Function: Represents a reusable block of code that can be invoked by name.
+Example:
+function greet(name) { return "Hello, " + name + "!"; } 
+
+5.	Special Data Types:
+•	Symbol (ES6+): Represents a unique identifier. Symbols are often used as keys for object properties to avoid naming conflicts.
+Example:
+const mySymbol = Symbol("unique"); 
+
+6.	Primitive Wrapper Objects:
+•	String Object: Represents a string as an object. This is rarely used explicitly.
+•	Number Object: Represents a number as an object. This is rarely used explicitly.
+•	Boolean Object: Represents a boolean as an object. This is rarely used explicitly.
+Example:
+let stringObject = new String("Hello"); let numberObject = new Number(42); let booleanObject = new Boolean(true);
+
+                    </code>
+                </div>
+                    <div id="function">
+                        <h2>Function</h2>
+                        <p>
+                            In JavaScript, a function is a block of reusable code that performs a specific task or set of tasks. Functions are a fundamental building block in JavaScript programming, allowing you to encapsulate logic, make your code more modular, and promote code reusability. Here's the basic syntax for creating and using functions:
+                        </p>
+                        <button class="accordion-button" onclick="toggleCodeContainer(8)">Click for Example  <i class="fa-solid fa-caret-down"></i></button>
+                        <div class="code-container" id="codeContainer8">
+                            <code>     
+                            
+                                •	functionName: The name of the function.
+                                •	parameters: Input values passed to the function (optional).
+                                •	code to be executed: The logic or tasks performed by the function.
+                                •	return result: The value that the function returns (optional).
+
+                                Example:
+                                javascriptCopy code
+                                function greet(name) { return "Hello, " + name + "!"; } let greeting = greet("John"); console.log(greeting); // Output: "Hello, John!"
+                                
+
+        
+                            </code>
+                        </div>
+                        <div id="object">
+                            <h2>Object</h2>
+                            <p>
+                                In JavaScript, an object is a complex data type that allows you to store and organize data in key-value pairs. Objects can represent real-world entities and are a fundamental part of the language. Here's the basic syntax for creating and using objects:
+                            <button class="accordion-button" onclick="toggleCodeContainer(9)">Click for Example  <i class="fa-solid fa-caret-down"></i></button>
+                            <div class="code-container" id="codeContainer9">
+                                <code>    
+                                    Object Literal:
+The most common way to create an object is by using an object literal:
+let person = { name: "John", age: 30, isStudent: false, greet: function() { console.log("Hello!"); } }; 
+In this example:
+•	name, age, isStudent: These are properties of the object, each with a key and a corresponding value.
+•	greet: This is a method (a function associated with an object) stored as a property.
+
+                                </code>
+                                </div>
+
+                 <div id="string">
+                    <h2>String</h2>
+                 <p>
+                    In JavaScript, a string is a primitive data type that represents a sequence of characters. Strings are often used to store and manipulate text. Here's an overview of strings in JavaScript:
+                    <button class="accordion-button" onclick="toggleCodeContainer(10)">Click for Example  <i class="fa-solid fa-caret-down"></i></button>
+                        <div class="code-container" id="codeContainer10">
+                            <code>    
+                            Concatenation:
+let firstName = "John"; let lastName = "Doe"; let fullName = firstName + " " + 
+lastName; console.log(fullName); // Output: "John Doe"
+
+        
+                                </code>
+                            </div>
+                            <div id="array">
+                                <h2>Array</h2>
+                                <p>
+                                 In JavaScript, an array is a data structure that allows you to store and manipulate 
+                                 a collection of values. Arrays can contain elements of any data type, including numbers,
+                                  strings, objects, and other arrays. Here's an overview of JavaScript arrays:
+                            <button class="accordion-button" onclick="toggleCodeContainer(11)">Click for Example  <i class="fa-solid fa-caret-down"></i></button>
+                            <div class="code-container" id="codeContainer11">
+                                <code>    
+                                    Array Literal:
+                                                    
+                                     let fruits = ["apple", "orange", "banana"];
+                                     Elements are enclosed in square brackets [].
+                                    Elements can be of different data types.
+        
+                
+                                         </code>
+                                     </div>
+
+                    </div>               
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./htmlt.js"></script>
+
+</html>
