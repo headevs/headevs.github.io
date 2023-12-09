@@ -1,11 +1,15 @@
+
+
+// TUTORIAL PAGES
+
 var dmButton = document.getElementById("dmButton");
 var dropdownButton = document.getElementById("snButton");
 
-dmButton.onclick = function() {
+dmButton.onclick = function () {
     document.body.classList.toggle("switch-theme");
 }
 
-dropdownButton.onclick = function() {
+dropdownButton.onclick = function () {
     document.body.classList.toggle("sidenav-open");
 }
 
@@ -36,7 +40,7 @@ function toggleCodeContainer(containerNumber) {
         codeContainer.style.maxHeight = codeContainer.scrollHeight + "px";
     } else {
         codeContainer.style.maxHeight = "0";
-        setTimeout(function() {
+        setTimeout(function () {
             codeContainer.style.display = "none";
         }, 300);
     }
