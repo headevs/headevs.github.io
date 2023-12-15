@@ -106,8 +106,14 @@
                     are composed of various statements that are executed sequentially or conditionally. Here are some
                     common types of JavaScript statements:
                 </p>
-                <button class="accordion-button" onclick="toggleCodeContainer(1)">Click for Example <i
-                        class="fa-solid fa-caret-down"></i></button>
+                <div class="button" id="buttonGroup1">
+                    <button class="accordion-button" onclick="toggleCodeContainer(1)">Click for Example <i
+                            class="fa-solid fa-caret-down"></i></button>
+                    <button class="outputButton" onclick="runCode(1)">Output</button>
+                    <button class="copyButton" onclick="copyCode(1)"><i class="fa-regular fa-clipboard"></i></button>
+                    <button class="downloadButton" onclick="downloadCode(1)"><i
+                            class="fa-solid fa-download"></i></button>
+                </div>
                 <div class="code-container" id="codeContainer1">
                     <code>
                     VARIABLE DECLARATION:
@@ -176,8 +182,14 @@
                     Any text between // and the end of the line will be ignored by JavaScript (will not be executed).
                     This example uses a single-line comment before each code line:
                 </p>
-                <button class="accordion-button" onclick="toggleCodeContainer(2)">Click for Example <i
-                        class="fa-solid fa-caret-down"></i></button>
+                <div class="button" id="buttonGroup2">
+                    <button class="accordion-button" onclick="toggleCodeContainer(2)">Click for Example <i
+                            class="fa-solid fa-caret-down"></i></button>
+                    <button class="outputButton" onclick="runCode(2)">Output</button>
+                    <button class="copyButton" onclick="copyCode(2)"><i class="fa-regular fa-clipboard"></i></button>
+                    <button class="downloadButton" onclick="downloadCode(2)"><i
+                            class="fa-solid fa-download"></i></button>
+                </div>
                 <div class="code-container" id="codeContainer2">
                     <code>
                         // Change heading:
@@ -195,8 +207,14 @@
                         Any text between /* and */ will be ignored by JavaScript.
                         This example uses a multi-line comment (a comment block) to explain the code:
                     </p>
-                    <button class="accordion-button" onclick="toggleCodeContainer(3)">Click for Example <i
-                            class="fa-solid fa-caret-down"></i></button>
+                    <div class="button" id="buttonGroup3">
+                        <button class="accordion-button" onclick="toggleCodeContainer(3)">Click for Example <i
+                                class="fa-solid fa-caret-down"></i></button>
+                        <button class="outputButton" onclick="runCode(3)">Output</button>
+                        <button class="copyButton" onclick="copyCode(3)"><i class="fa-regular fa-clipboard"></i></button>
+                        <button class="downloadButton" onclick="downloadCode(3)"><i
+                                class="fa-solid fa-download"></i></button>
+                    </div>
                     <div class="code-container" id="codeContainer3">
                         <code>
                         /*
@@ -220,8 +238,14 @@
                             Using let
                             Using const
                         </p>
-                        <button class="accordion-button" onclick="toggleCodeContainer(4)">Click for Example <i
-                                class="fa-solid fa-caret-down"></i></button>
+                        <div class="button" id="buttonGroup4">
+                            <button class="accordion-button" onclick="toggleCodeContainer(4)">Click for Example <i
+                                    class="fa-solid fa-caret-down"></i></button>
+                            <button class="outputButton" onclick="runCode(4)">Output</button>
+                            <button class="copyButton" onclick="copyCode(4)"><i class="fa-regular fa-clipboard"></i></button>
+                            <button class="downloadButton" onclick="downloadCode(4)"><i
+                                    class="fa-solid fa-download"></i></button>
+                        </div>
                         <div class="code-container" id="codeContainer4">
                             <code>
                             Automatically
@@ -254,8 +278,14 @@
                                 JavaScript
                                 operators:
                             </p>
-                            <button class="accordion-button" onclick="toggleCodeContainer(5)">Click for Example <i
-                                    class="fa-solid fa-caret-down"></i></button>
+                            <div class="button" id="buttonGroup5">
+                                <button class="accordion-button" onclick="toggleCodeContainer(5)">Click for Example <i
+                                        class="fa-solid fa-caret-down"></i></button>
+                                <button class="outputButton" onclick="runCode(5)">Output</button>
+                                <button class="copyButton" onclick="copyCode(5)"><i class="fa-regular fa-clipboard"></i></button>
+                                <button class="downloadButton" onclick="downloadCode(5)"><i
+                                        class="fa-solid fa-download"></i></button>
+                            </div>
                             <div class="code-container" id="codeContainer5">
                                 <code>
         1.	Arithmetic Operators:
@@ -318,8 +348,14 @@
                                     In JavaScript, assignment is the process of assigning a value to a variable.
                                     Variables are used to
                                     store and manage data in your programs. Here are examples of JavaScript assignment.
-                                    <button class="accordion-button" onclick="toggleCodeContainer(6)">Click for Example
-                                        <i class="fa-solid fa-caret-down"></i></button>
+                                    <div class="button" id="buttonGroup6">
+                                        <button class="accordion-button" onclick="toggleCodeContainer(6)">Click for Example <i
+                                                class="fa-solid fa-caret-down"></i></button>
+                                        <button class="outputButton" onclick="runCode(6)">Output</button>
+                                        <button class="copyButton" onclick="copyCode(6)"><i class="fa-regular fa-clipboard"></i></button>
+                                        <button class="downloadButton" onclick="downloadCode(6)"><i
+                                                class="fa-solid fa-download"></i></button>
+                                    </div>
                                 <div class="code-container" id="codeContainer6">
                                     <code>
 1.	Basic Assignment (=):
@@ -370,8 +406,14 @@ let { a, b } = { a: 5, b: 10 }; // Object destructuring assignment // Now, a is 
                                     Undefined: Represents an uninitialized variable or a variable with no assigned
                                     value.
                                 </p>
-                                <button class="accordion-button" onclick="toggleCodeContainer(7)">Click for Example <i
-                                        class="fa-solid fa-caret-down"></i></button>
+                                <div class="button" id="buttonGroup7">
+                                    <button class="accordion-button" onclick="toggleCodeContainer(7)">Click for Example <i
+                                            class="fa-solid fa-caret-down"></i></button>
+                                    <button class="outputButton" onclick="runCode(7)">Output</button>
+                                    <button class="copyButton" onclick="copyCode(7)"><i class="fa-regular fa-clipboard"></i></button>
+                                    <button class="downloadButton" onclick="downloadCode(7)"><i
+                                            class="fa-solid fa-download"></i></button>
+                                </div>
                                 <div class="code-container" id="codeContainer7">
                                     <code>
 1.	Undefined:
@@ -415,8 +457,14 @@ let stringObject = new String("Hello"); let numberObject = new Number(42); let b
                                         promote code reusability. Here's the basic syntax for creating and using
                                         functions:
                                     </p>
-                                    <button class="accordion-button" onclick="toggleCodeContainer(8)">Click for Example
-                                        <i class="fa-solid fa-caret-down"></i></button>
+                                    <div class="button" id="buttonGroup8">
+                                        <button class="accordion-button" onclick="toggleCodeContainer(8)">Click for Example <i
+                                                class="fa-solid fa-caret-down"></i></button>
+                                        <button class="outputButton" onclick="runCode(8)">Output</button>
+                                        <button class="copyButton" onclick="copyCode(8)"><i class="fa-regular fa-clipboard"></i></button>
+                                        <button class="downloadButton" onclick="downloadCode(8)"><i
+                                                class="fa-solid fa-download"></i></button>
+                                    </div>
                                     <div class="code-container" id="codeContainer8">
                                         <code>
 
@@ -440,8 +488,14 @@ let stringObject = new String("Hello"); let numberObject = new Number(42); let b
                                             organize data in key-value pairs. Objects can represent real-world entities
                                             and are a fundamental part of the language. Here's the basic syntax for
                                             creating and using objects:
-                                            <button class="accordion-button" onclick="toggleCodeContainer(9)">Click for
-                                                Example <i class="fa-solid fa-caret-down"></i></button>
+                                            <div class="button" id="buttonGroup9">
+                                                <button class="accordion-button" onclick="toggleCodeContainer(9)">Click for Example <i
+                                                        class="fa-solid fa-caret-down"></i></button>
+                                                <button class="outputButton" onclick="runCode(9)">Output</button>
+                                                <button class="copyButton" onclick="copyCode(9)"><i class="fa-regular fa-clipboard"></i></button>
+                                                <button class="downloadButton" onclick="downloadCode(9)"><i
+                                                        class="fa-solid fa-download"></i></button>
+                                            </div>
                                         <div class="code-container" id="codeContainer9">
                                             <code>
                                     Object Literal:
@@ -460,8 +514,14 @@ In this example:
                                                 In JavaScript, a string is a primitive data type that represents a
                                                 sequence of characters. Strings are often used to store and manipulate
                                                 text. Here's an overview of strings in JavaScript:
-                                                <button class="accordion-button" onclick="toggleCodeContainer(10)">Click
-                                                    for Example <i class="fa-solid fa-caret-down"></i></button>
+                                                <div class="button" id="buttonGroup10">
+                                                    <button class="accordion-button" onclick="toggleCodeContainer(10)">Click for Example <i
+                                                            class="fa-solid fa-caret-down"></i></button>
+                                                    <button class="outputButton" onclick="runCode(10)">Output</button>
+                                                    <button class="copyButton" onclick="copyCode(10)"><i class="fa-regular fa-clipboard"></i></button>
+                                                    <button class="downloadButton" onclick="downloadCode(10)"><i
+                                                            class="fa-solid fa-download"></i></button>
+                                                </div>
                                             <div class="code-container" id="codeContainer10">
                                                 <code>
                             Concatenation:
@@ -481,8 +541,14 @@ lastName; console.log(fullName); // Output: "John Doe"
                                                     strings, objects, and other arrays. Here's an overview of JavaScript
                                                     arrays:
                                                     <button class="accordion-button"
-                                                        onclick="toggleCodeContainer(11)">Click for Example <i
-                                                            class="fa-solid fa-caret-down"></i></button>
+                                                    <div class="button" id="buttonGroup11">
+                                                        <button class="accordion-button" onclick="toggleCodeContainer(11)">Click for Example <i
+                                                                class="fa-solid fa-caret-down"></i></button>
+                                                        <button class="outputButton" onclick="runCode(11)">Output</button>
+                                                        <button class="copyButton" onclick="copyCode(11)"><i class="fa-regular fa-clipboard"></i></button>
+                                                        <button class="downloadButton" onclick="downloadCode(11)"><i
+                                                                class="fa-solid fa-download"></i></button>
+                                                    </div>
                                                 <div class="code-container" id="codeContainer11">
                                                     <code>
                                     Array Literal:
