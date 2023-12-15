@@ -181,14 +181,38 @@
                     and text-align. These properties can be applied to selected elements, providing a versatile means of
                     customizing the appearance of web content.
                 </p>
-                <button class="accordion-button" onclick="toggleCodeContainer(1)">Click for Example <i
-                        class="fa-solid fa-caret-down"></i></button>
+                <div class="button" id="buttonGroup1">
+                    <button class="accordion-button" onclick="toggleCodeContainer(1)">Click for Example <i
+                            class="fa-solid fa-caret-down"></i></button>
+                    <button class="outputButton" onclick="runCode(1)">Output</button>
+                    <button class="copyButton" onclick="copyCode(1)"><i class="fa-regular fa-clipboard"></i></button>
+                    <button class="downloadButton" onclick="downloadCode(1)"><i
+                            class="fa-solid fa-download"></i></button>
+                </div>
                 <div class="code-container" id="codeContainer1">
                     <code>
-                        /* Selects all paragraphs and changes their color to red */
-                        p {
-                        color: red;
-                        }
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS Tutorial - Selectors and Basic Styling&lt;/title&gt;
+
+    &lt;style&gt;
+        /* Selects all paragraphs and changes their color to red */
+        p {
+            color: red;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;p&gt;This paragraph will be red.&lt;/p&gt;
+    &lt;p&gt;Another red paragraph.&lt;/p&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
                     </code>
                 </div>
             </div>
@@ -201,16 +225,40 @@
                     example, adding padding, border, and margin to a div element enhances control over its appearance
                     and spacing in relation to other elements on the page.
                 </p>
-                <button class="accordion-button" onclick="toggleCodeContainer(2)">Click for Example <i
-                        class="fa-solid fa-caret-down"></i></button>
+                <div class="button" id="buttonGroup2">
+                    <button class="accordion-button" onclick="toggleCodeContainer(2)">Click for Example <i
+                            class="fa-solid fa-caret-down"></i></button>
+                    <button class="outputButton" onclick="runCode(2)">Output</button>
+                    <button class="copyButton" onclick="copyCode(2)"><i class="fa-regular fa-clipboard"></i></button>
+                    <button class="downloadButton" onclick="downloadCode(2)"><i
+                            class="fa-solid fa-download"></i></button>
+                </div>
                 <div class="code-container" id="codeContainer2">
                     <code>
-                        /* Adds padding, border, and margin to a div */
-                        div {
-                        padding: 10px;
-                        border: 1px solid #000;
-                        margin: 10px;
-                        }
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS Tutorial - Box Model&lt;/title&gt;
+
+    &lt;style&gt;
+        /* Adds padding, border, and margin to a div */
+        .box {
+            padding: 10px;
+            border: 1px solid #000;
+            margin: 10px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div class="box"&gt;This is a box with padding, border, and margin.&lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+
                     </code>
                 </div>
             </div>
@@ -223,15 +271,43 @@
                     container. Grid layout, on the other hand, is a two-dimensional system that enables precise control
                     over rows and columns, facilitating complex yet responsive designs.
                 </p>
-                <button class="accordion-button" onclick="toggleCodeContainer(3)">Click for Example <i
-                        class="fa-solid fa-caret-down"></i></button>
+                <div class="button" id="buttonGroup3">
+                    <button class="accordion-button" onclick="toggleCodeContainer(3)">Click for Example <i
+                            class="fa-solid fa-caret-down"></i></button>
+                    <button class="outputButton" onclick="runCode(3)">Output</button>
+                    <button class="copyButton" onclick="copyCode(3)"><i class="fa-regular fa-clipboard"></i></button>
+                    <button class="downloadButton" onclick="downloadCode(3)"><i
+                            class="fa-solid fa-download"></i></button>
+                </div>
                 <div class="code-container" id="codeContainer3">
                     <code>
-                        /* Flexbox example */
-                        .container {
-                        display: flex;
-                        justify-content: space-between;
-                        }
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS Tutorial - Layouts&lt;/title&gt;
+
+    &lt;style&gt;
+        /* Flexbox example */
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div class="container"&gt;
+        &lt;div&gt;Item 1&lt;/div&gt;
+        &lt;div&gt;Item 2&lt;/div&gt;
+        &lt;div&gt;Item 3&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+
                     </code>
                 </div>
             </div>
@@ -244,16 +320,40 @@
                     the layout to a single column on smaller screens enhances the user experience across different
                     devices.
                 </p>
-                <button class="accordion-button" onclick="toggleCodeContainer(4)">Click for Example <i
-                        class="fa-solid fa-caret-down"></i></button>
+                <div class="button" id="buttonGroup4">
+                    <button class="accordion-button" onclick="toggleCodeContainer(4)">Click for Example <i
+                            class="fa-solid fa-caret-down"></i></button>
+                    <button class="outputButton" onclick="runCode(4)">Output</button>
+                    <button class="copyButton" onclick="copyCode(4)"><i class="fa-regular fa-clipboard"></i></button>
+                    <button class="downloadButton" onclick="downloadCode(4)"><i
+                            class="fa-solid fa-download"></i></button>
+                </div>
                 <div class="code-container" id="codeContainer4">
                     <code>
-                        /* Responsive styles for screens smaller than 600px */
-                        @media screen and (max-width: 600px) {
-                        body {
-                            font-size: 14px;
-                        }
-                        }
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS Tutorial - Responsive Design&lt;/title&gt;
+
+    &lt;style&gt;
+        /* Responsive styles for screens smaller than 600px */
+        @media screen and (max-width: 600px) {
+            body {
+                font-size: 14px;
+            }
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;p&gt;Responsive font size for smaller screens.&lt;/p&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+
                     </code>
                 </div>
             </div>
@@ -266,17 +366,42 @@
                     For example, a button changing color on hover showcases the simplicity and effectiveness of CSS
                     transitions.
                 </p>
-                <button class="accordion-button" onclick="toggleCodeContainer(5)">Click for Example <i
-                        class="fa-solid fa-caret-down"></i></button>
+                <div class="button" id="buttonGroup5">
+                    <button class="accordion-button" onclick="toggleCodeContainer(5)">Click for Example <i
+                            class="fa-solid fa-caret-down"></i></button>
+                    <button class="outputButton" onclick="runCode(5)">Output</button>
+                    <button class="copyButton" onclick="copyCode(5)"><i class="fa-regular fa-clipboard"></i></button>
+                    <button class="downloadButton" onclick="downloadCode(5)"><i
+                            class="fa-solid fa-download"></i></button>
+                </div>
                 <div class="code-container" id="codeContainer5">
                     <code>
-                        /* Transition on hover */
-                        button {
-                        transition: background-color 0.3s ease;
-                        }
-                        button:hover {
-                        background-color: #3498db;
-                        }
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS Tutorial - Transitions and Animations&lt;/title&gt;
+
+    &lt;style&gt;
+        /* Transition on hover */
+        button {
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #3498db;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;button&gt;Hover to Change Color&lt;/button&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+
                     </code>
                 </div>
             </div>
@@ -288,14 +413,37 @@
                     instance, rotating a div by 45 degrees can be achieved with a simple CSS declaration, offering a
                     visually engaging way to present content.
                 </p>
-                <button class="accordion-button" onclick="toggleCodeContainer(6)">Click for Example <i
-                        class="fa-solid fa-caret-down"></i></button>
+                <div class="button" id="buttonGroup6">
+                    <button class="accordion-button" onclick="toggleCodeContainer(6)">Click for Example <i
+                            class="fa-solid fa-caret-down"></i></button>
+                    <button class="outputButton" onclick="runCode(6)">Output</button>
+                    <button class="copyButton" onclick="copyCode(6)"><i class="fa-regular fa-clipboard"></i></button>
+                    <button class="downloadButton" onclick="downloadCode(6)"><i
+                            class="fa-solid fa-download"></i></button>
+                </div>
                 <div class="code-container" id="codeContainer6">
-                    <code>
-                        /* Rotate a div */
-                        .box {
-                        transform: rotate(45deg);
-                        }
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html lang="en"&gt;
+
+                    &lt;head&gt;
+                    &lt;meta charset="UTF-8"&gt;
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                    &lt;title&gt;CSS Tutorial - Transformations&lt;/title&gt;
+
+                    &lt;style&gt;
+                    /* Rotate a div */
+                    .rotate-box {
+                    transform: rotate(45deg);
+                    }
+                    &lt;/style&gt;
+                    &lt;/head&gt;
+
+                    &lt;body&gt;
+                    &lt;div class="rotate-box"&gt;This box is rotated.&lt;/div&gt;
+                    &lt;/body&gt;
+
+                    &lt;/html&gt;
+
                     </code>
                 </div>
             </div>
@@ -307,14 +455,39 @@
                     pseudo-classes like :hover allow for styling in response to user actions. Using these selectors
                     enhances the precision and specificity of style rules.
                 </p>
-                <button class="accordion-button" onclick="toggleCodeContainer(7)">Click for Example <i
-                        class="fa-solid fa-caret-down"></i></button>
+                <div class="button" id="buttonGroup7">
+                    <button class="accordion-button" onclick="toggleCodeContainer(7)">Click for Example <i
+                            class="fa-solid fa-caret-down"></i></button>
+                    <button class="outputButton" onclick="runCode(7)">Output</button>
+                    <button class="copyButton" onclick="copyCode(7)"><i class="fa-regular fa-clipboard"></i></button>
+                    <button class="downloadButton" onclick="downloadCode(7)"><i
+                            class="fa-solid fa-download"></i></button>
+                </div>
                 <div class="code-container" id="codeContainer7">
                     <code>
-                        /* Select input with a type of text */
-                        input[type="text"] {
-                        border: 1px solid #ccc;
-                        }
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS Tutorial - Advanced Selectors&lt;/title&gt;
+
+    &lt;style&gt;
+        /* Select input with a type of text */
+        input[type="text"] {
+            border: 1px solid #ccc;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;label for="username"&gt;Username:&lt;/label&gt;
+    &lt;input type="text" id="username" name="username"&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+
                     </code>
                 </div>
             </div>
@@ -326,18 +499,43 @@
                     design constants. For instance, creating a variable for the main color and applying it to various
                     elements ensures consistency and ease of updates across the entire stylesheet.
                 </p>
-                <button class="accordion-button" onclick="toggleCodeContainer(8)">Click for Example <i
-                        class="fa-solid fa-caret-down"></i></button>
+                <div class="button" id="buttonGroup8">
+                    <button class="accordion-button" onclick="toggleCodeContainer(8)">Click for Example <i
+                            class="fa-solid fa-caret-down"></i></button>
+                    <button class="outputButton" onclick="runCode(8)">Output</button>
+                    <button class="copyButton" onclick="copyCode(8)"><i class="fa-regular fa-clipboard"></i></button>
+                    <button class="downloadButton" onclick="downloadCode(8)"><i
+                            class="fa-solid fa-download"></i></button>
+                </div>
                 <div class="code-container" id="codeContainer8">
                     <code>
-                        /* Define a variable */
-                        :root {
-                        --main-color: #3498db;
-                        }
-                        /* Use the variable */
-                        .element {
-                        color: var(--main-color);
-                        }
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS Tutorial - CSS Variables&lt;/title&gt;
+
+    &lt;style&gt;
+        /* Define a variable */
+        :root {
+            --main-color: #3498db;
+        }
+
+        /* Use the variable */
+        .variable-element {
+            color: var(--main-color);
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;p class="variable-element"&gt;This text uses a CSS variable for color.&lt;/p&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+
                     </code>
                 </div>
             </div>
@@ -349,14 +547,40 @@
                     developers to write more modular and efficient stylesheets. In SASS, for example, a variable can be
                     declared for the primary color, promoting consistency and ease of modification.
                 </p>
-                <button class="accordion-button" onclick="toggleCodeContainer(9)">Click for Example <i
-                        class="fa-solid fa-caret-down"></i></button>
+                <div class="button" id="buttonGroup9">
+                    <button class="accordion-button" onclick="toggleCodeContainer(9)">Click for Example <i
+                            class="fa-solid fa-caret-down"></i></button>
+                    <button class="outputButton" onclick="runCode(9)">Output</button>
+                    <button class="copyButton" onclick="copyCode(9)"><i class="fa-regular fa-clipboard"></i></button>
+                    <button class="downloadButton" onclick="downloadCode(9)"><i
+                            class="fa-solid fa-download"></i></button>
+                </div>
                 <div class="code-container" id="codeContainer9">
                     <code>
-                        $primary-color: #3498db;
-                        .element {
-                        color: $primary-color;
-                        }
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS Tutorial - CSS Preprocessors&lt;/title&gt;
+
+    &lt;style&gt;
+        /* This is a simplified example without using an actual preprocessor */
+        $main-color: #3498db;
+
+        .preprocessor-element {
+            color: $main-color;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;p class="preprocessor-element"&gt;This text uses a variable from a CSS preprocessor.&lt;/p&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+
                     </code>
                 </div>
             </div>
@@ -369,14 +593,39 @@
                     For instance, assigning a class name like .header to style header elements promotes clarity and
                     consistency across the project.
                 </p>
-                <button class="accordion-button" onclick="toggleCodeContainer(10)">Click for Example <i
-                        class="fa-solid fa-caret-down"></i></button>
+                <div class="button" id="buttonGroup10">
+                    <button class="accordion-button" onclick="toggleCodeContainer(10)">Click for Example <i
+                            class="fa-solid fa-caret-down"></i></button>
+                    <button class="outputButton" onclick="runCode(10)">Output</button>
+                    <button class="copyButton" onclick="copyCode(10)"><i class="fa-regular fa-clipboard"></i></button>
+                    <button class="downloadButton" onclick="downloadCode(10)"><i
+                            class="fa-solid fa-download"></i></button>
+                </div>
                 <div class="code-container" id="codeContainer10">
                     <code>
-                        /* Good practice: Use meaningful class names */
-                        .header {
-                        font-size: 24px;
-                        }
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS Tutorial - Best Practices&lt;/title&gt;
+
+    &lt;style&gt;
+        /* Best practices example */
+        .header {
+            font-size: 1.5em;
+            color: #333;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div class="header"&gt;This is a header with best practices.&lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+
                     </code>
                 </div>
             </div>
@@ -389,11 +638,54 @@
                     process and ensures a cohesive and visually appealing design without the need for extensive custom
                     styling.
                 </p>
-                <button class="accordion-button" onclick="toggleCodeContainer(11)">Click for Example <i
-                        class="fa-solid fa-caret-down"></i></button>
+                <div class="button" id="buttonGroup11">
+                    <button class="accordion-button" onclick="toggleCodeContainer(11)">Click for Example <i
+                            class="fa-solid fa-caret-down"></i></button>
+                    <button class="outputButton" onclick="runCode(11)">Output</button>
+                    <button class="copyButton" onclick="copyCode(11)"><i class="fa-regular fa-clipboard"></i></button>
+                    <button class="downloadButton" onclick="downloadCode(11)"><i
+                            class="fa-solid fa-download"></i></button>
+                </div>
                 <div class="code-container" id="codeContainer11">
                     <code>
-                        &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS Tutorial - CSS Frameworks&lt;/title&gt;
+
+    &lt;style&gt;
+        /* Bootstrap example */
+        .btn {
+            display: inline-block;
+            font-weight: 400;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -webkit-user-select: none;
+            user-select: none;
+            border: 1px solid transparent;
+            padding: 0.375rem 0.75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            border-radius: 0.25rem;
+            transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+                border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+            color: #fff;
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;button class="btn"&gt;Bootstrap Button&lt;/button&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+
                     </code>
                 </div>
             </div>
@@ -405,11 +697,43 @@
                     of interactive elements. For instance, adding an aria-label attribute to a button with an "X" icon
                     ensures that screen readers convey the button's purpose to users with visual impairments.
                 </p>
-                <button class="accordion-button" onclick="toggleCodeContainer(12)">Click for Example <i
-                        class="fa-solid fa-caret-down"></i></button>
+                <div class="button" id="buttonGroup12">
+                    <button class="accordion-button" onclick="toggleCodeContainer(12)">Click for Example <i
+                            class="fa-solid fa-caret-down"></i></button>
+                    <button class="outputButton" onclick="runCode(12)">Output</button>
+                    <button class="copyButton" onclick="copyCode(12)"><i class="fa-regular fa-clipboard"></i></button>
+                    <button class="downloadButton" onclick="downloadCode(12)"><i
+                            class="fa-solid fa-download"></i></button>
+                </div>
                 <div class="code-container" id="codeContainer12">
                     <code>
-                        &lt;button aria-label="Close"&gt;X&lt;/button&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS Tutorial - CSS and Accessibility&lt;/title&gt;
+
+    &lt;style&gt;
+        /* Accessible button example */
+        .accessible-btn {
+            padding: 10px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;button class="accessible-btn" aria-label="Click me"&gt;Accessible Button&lt;/button&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+
                     </code>
                 </div>
             </div>
@@ -421,14 +745,39 @@
                     styles in real-time, and identifying the source of layout problems. Adding temporary styles, such as
                     a red border, to highlight problematic elements simplifies the debugging process.
                 </p>
-                <button class="accordion-button" onclick="toggleCodeContainer(13)">Click for Example <i
-                        class="fa-solid fa-caret-down"></i></button>
+                <div class="button" id="buttonGroup13">
+                    <button class="accordion-button" onclick="toggleCodeContainer(13)">Click for Example <i
+                            class="fa-solid fa-caret-down"></i></button>
+                    <button class="outputButton" onclick="runCode(13)">Output</button>
+                    <button class="copyButton" onclick="copyCode(13)"><i class="fa-regular fa-clipboard"></i></button>
+                    <button class="downloadButton" onclick="downloadCode(13)"><i
+                            class="fa-solid fa-download"></i></button>
+                </div>
                 <div class="code-container" id="codeContainer13">
                     <code>
-                        /* Debugging: Add a red border to highlight an element */
-                        .debug {
-                        border: 2px solid red;
-                        }
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS Tutorial - Debugging CSS&lt;/title&gt;
+
+    &lt;style&gt;
+        /* Debugging example */
+        .debug-box {
+            border: 2px solid #e74c3c;
+            padding: 10px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div class="debug-box"&gt;This is a box for debugging.&lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+
                     </code>
                 </div>
             </div>
@@ -440,14 +789,41 @@
                     property with a value like 10px imparts a rounded appearance to elements, adding a modern and
                     polished aesthetic to the design.
                 </p>
-                <button class="accordion-button" onclick="toggleCodeContainer(14)">Click for Example <i
-                        class="fa-solid fa-caret-down"></i></button>
+                <div class="button" id="buttonGroup14">
+                    <button class="accordion-button" onclick="toggleCodeContainer(14)">Click for Example <i
+                            class="fa-solid fa-caret-down"></i></button>
+                    <button class="outputButton" onclick="runCode(14)">Output</button>
+                    <button class="copyButton" onclick="copyCode(14)"><i class="fa-regular fa-clipboard"></i></button>
+                    <button class="downloadButton" onclick="downloadCode(14)"><i
+                            class="fa-solid fa-download"></i></button>
+                </div>
                 <div class="code-container" id="codeContainer14">
                     <code>
-                        /* Rounded corners */
-                        .box {
-                        border-radius: 10px;
-                        }
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS Tutorial - CSS3 Features&lt;/title&gt;
+
+    &lt;style&gt;
+        /* CSS3 features example */
+        .rounded-box {
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #3498db;
+            color: #fff;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div class="rounded-box"&gt;This box has rounded corners using CSS3 features.&lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+
                     </code>
                 </div>
             </div>
@@ -459,15 +835,51 @@
                     container can be set to display three columns with equal widths, providing a flexible and responsive
                     structure for content placement.
                 </p>
-                <button class="accordion-button" onclick="toggleCodeContainer(15)">Click for Example <i
-                        class="fa-solid fa-caret-down"></i></button>
+                <div class="button" id="buttonGroup15">
+                    <button class="accordion-button" onclick="toggleCodeContainer(15)">Click for Example <i
+                            class="fa-solid fa-caret-down"></i></button>
+                    <button class="outputButton" onclick="runCode(15)">Output</button>
+                    <button class="copyButton" onclick="copyCode(15)"><i class="fa-regular fa-clipboard"></i></button>
+                    <button class="downloadButton" onclick="downloadCode(15)"><i
+                            class="fa-solid fa-download"></i></button>
+                </div>
                 <div class="code-container" id="codeContainer15">
                     <code>
-                        /* Grid container */
-                        .container {
-                        display: grid;
-                        grid-template-columns: repeat(3, 1fr);
-                        }
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS Tutorial - CSS Grid Systems&lt;/title&gt;
+
+    &lt;style&gt;
+        /* CSS Grid example */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .grid-item {
+            background-color: #3498db;
+            padding: 20px;
+            color: #fff;
+            text-align: center;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div class="grid-container"&gt;
+        &lt;div class="grid-item"&gt;Item 1&lt;/div&gt;
+        &lt;div class="grid-item"&gt;Item 2&lt;/div&gt;
+        &lt;div class="grid-item"&gt;Item 3&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+
                     </code>
                 </div>
             </div>
@@ -479,12 +891,36 @@
                     CSS, and JavaScript fosters collaboration among developers. Linking a CSS file to an HTML document,
                     as demonstrated below, is a common practice:
                 </p>
-                <button class="accordion-button" onclick="toggleCodeContainer(16)">Click for Example <i
-                        class="fa-solid fa-caret-down"></i></button>
+                <div class="button" id="buttonGroup16">
+                    <button class="accordion-button" onclick="toggleCodeContainer(16)">Click for Example <i
+                            class="fa-solid fa-caret-down"></i></button>
+                    <button class="outputButton" onclick="runCode(16)">Output</button>
+                    <button class="copyButton" onclick="copyCode(16)"><i class="fa-regular fa-clipboard"></i></button>
+                    <button class="downloadButton" onclick="downloadCode(16)"><i
+                            class="fa-solid fa-download"></i></button>
+                </div>
                 <div class="code-container" id="codeContainer16">
                     <code>
-                        &lt;!-- Link CSS file in HTML --&gt;
-                        &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS Tutorial - CSS in Real Projects&lt;/title&gt;
+
+    &lt;style&gt;
+        /* External CSS file: styles.css */
+        @import url('styles.css');
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;p&gt;This page uses CSS from an external file.&lt;/p&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+
                     </code>
                 </div>
             </div>
@@ -496,15 +932,39 @@
                     implementations. For example, adding a box shadow to an element might require vendor prefixes to
                     support various browsers:
                 </p>
-                <button class="accordion-button" onclick="toggleCodeContainer(17)">Click for Example <i
-                        class="fa-solid fa-caret-down"></i></button>
+                <div class="button" id="buttonGroup17">
+                    <button class="accordion-button" onclick="toggleCodeContainer(17)">Click for Example <i
+                            class="fa-solid fa-caret-down"></i></button>
+                    <button class="outputButton" onclick="runCode(17)">Output</button>
+                    <button class="copyButton" onclick="copyCode(17)"><i class="fa-regular fa-clipboard"></i></button>
+                    <button class="downloadButton" onclick="downloadCode(17)"><i
+                            class="fa-solid fa-download"></i></button>
+                </div>
                 <div class="code-container" id="codeContainer17">
                     <code>
-                        /* Vendor prefix for box-shadow */
-                        .box {
-                        -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-                        }
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS Tutorial - Cross-Browser Compatibility&lt;/title&gt;
+
+    &lt;style&gt;
+        /* Cross-browser compatibility example */
+        .box {
+            -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div class="box"&gt;This box has a cross-browser compatible box shadow.&lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+
                     </code>
                 </div>
             </div>
@@ -517,12 +977,38 @@
                     CSS and lazy loading. Minification reduces the size of stylesheets, improving page load times. For
                     instance, the following represents a minified CSS rule:
                 </p>
-                <button class="accordion-button" onclick="toggleCodeContainer(18)">Click for Example <i
-                        class="fa-solid fa-caret-down"></i></button>
+                <div class="button" id="buttonGroup18">
+                    <button class="accordion-button" onclick="toggleCodeContainer(18)">Click for Example <i
+                            class="fa-solid fa-caret-down"></i></button>
+                    <button class="outputButton" onclick="runCode(18)">Output</button>
+                    <button class="copyButton" onclick="copyCode(18)"><i class="fa-regular fa-clipboard"></i></button>
+                    <button class="downloadButton" onclick="downloadCode(18)"><i
+                            class="fa-solid fa-download"></i></button>
+                </div>
                 <div class="code-container" id="codeContainer18">
                     <code>
-                        /* Minified CSS */
-                        .element{color:#3498db;}
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS Tutorial - CSS and Performance&lt;/title&gt;
+
+    &lt;style&gt;
+        /* CSS performance optimization: Minification */
+        .element {
+            color: #3498db;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;p class="element"&gt;This element has optimized CSS for performance.&lt;/p&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+
                     </code>
                 </div>
             </div>
@@ -533,12 +1019,39 @@
                     changes over time. Developers can commit changes, create branches, and revert to previous states as
                     needed. For example, adding and committing changes to a CSS file is done through Git commands:
                 </p>
-                <button class="accordion-button" onclick="toggleCodeContainer(19)">Click for Example <i
-                        class="fa-solid fa-caret-down"></i></button>
+                <div class="button" id="buttonGroup19">
+                    <button class="accordion-button" onclick="toggleCodeContainer(19)">Click for Example <i
+                            class="fa-solid fa-caret-down"></i></button>
+                    <button class="outputButton" onclick="runCode(19)">Output</button>
+                    <button class="copyButton" onclick="copyCode(19)"><i class="fa-regular fa-clipboard"></i></button>
+                    <button class="downloadButton" onclick="downloadCode(19)"><i
+                            class="fa-solid fa-download"></i></button>
+                </div>
                 <div class="code-container" id="codeContainer19">
                     <code>
-                        git add styles.css
-                        git commit -m "Add styles for header"
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS Tutorial - Version Control&lt;/title&gt;
+
+    &lt;style&gt;
+        /* Version control example */
+        .version-control-info {
+            font-style: italic;
+            color: #555;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;p class="version-control-info"&gt;This project uses version control to track changes and collaborate with others.&lt;/p&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+
                     </code>
                 </div>
             </div>

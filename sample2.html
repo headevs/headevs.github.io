@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .code-container {
+            display: none;
+            max-height: 0;
+            overflow: hidden;
+            background-color: #111;
+            border: 1px solid var(--cc-border);
+            padding: 10px;
+            margin: 10px 0;
+            overflow-x: auto;
+            white-space: pre-line;
+            transition: max-height 0.3s ease;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            color: yellow;
+            font-size: 25px;
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+        }
+
+        .accordion-button {
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            background-color: tomato;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+
+        .button a, .button button {
+            display: none;
+            width: 20%;
+            background-color: tomato;
+            cursor: pointer;
+            padding: 18px;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+            text-decoration: none;
+            border: none;
+            color: white;
+        }
+
+        .button a:hover, .button button:hover {
+            background-color: red;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-wB5oK86L6HR5V53SpxevPzU6ET9K9t49zp3e/xgsx1R6tFQQVpAdI8xHdw7A81fP" crossorigin="anonymous">
+</head>
+<body>
+    <div class="button">
+        <button class="accordion-button" onclick="toggleCodeContainer(1)">Click for Example <i class="fa-solid fa-caret-down"></i></button>
+        <a href="#" class="outputButton" onclick="runCode(1)">Output</a>
+        <button class="copyButton" onclick="copyCode(1)">Copy</button>
+        <button class="downloadButton" onclick="downloadCode(1)">Download</button>
+    </div>
+
+    <div class="code-container" id="codeContainer1">
+        <code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;head&gt;
+            &lt;title&gt;Page Title&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+            
+            &lt;h1&gt;My First Heading&lt;/h1&gt;
+            &lt;p&gt;My first paragraph.&lt;/p&gt;
+            
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </code>
+    </div>
+
+    <script>
+        function toggleCodeContainer(containerNumber) {
+            var codeContainer = document.getElementById("codeContainer" + containerNumber);
+            var buttons = document.querySelector('.button');
+
+            var maxHeight = codeContainer.style.maxHeight;
+
+            if (maxHeight === "0px" || maxHeight === "") {
+                codeContainer.style.display = "block";
+                codeContainer.style.maxHeight = codeContainer.scrollHeight + "px";
+                buttons.style.display = "flex"; // Show all buttons
+            } else {
+                codeContainer.style.maxHeight = "0";
+                setTimeout(function () {
+                    codeContainer.style.display = "none";
+                    buttons.style.display = "none"; // Hide all buttons
+                }, 300);
+            }
+        }
+
+        function copyCode(containerNumber) {
+            var codeContainer = document.getElementById("codeContainer" + containerNumber);
+            var codeToCopy = codeContainer.querySelector('code').innerText;
+
+            // Create a temporary textarea element to facilitate copying
+            var tempTextarea = document.createElement('textarea');
+            tempTextarea.value = codeToCopy;
+            document.body.appendChild(tempTextarea);
+
+            // Select and copy the content
+            tempTextarea.select();
+            document.execCommand('copy');
+
+            // Clean up the temporary textarea
+            document.body.removeChild(tempTextarea);
+
+            // You can provide feedback to the user if needed
+            alert('Code copied to clipboard!');
+        }
+
+        function runCode(containerNumber) {
+            var codeContainer = document.getElementById("codeContainer" + containerNumber);
+            var codeToRun = codeContainer.querySelector('code').innerText;
+
+            // Create a Blob with the code content
+            var blob = new Blob(['<!DOCTYPE html><html>' + codeToRun + '</html>'], { type: 'text/html' });
+
+            // Open the temporary URL in a new window or tab
+            var outputWindow = window.open(URL.createObjectURL(blob), '_blank');
+
+            // You can provide feedback to the user if needed
+            alert('Output opened in a new window/tab.');
+        }
+
+        function downloadCode(containerNumber) {
+            var codeContainer = document.getElementById("codeContainer" + containerNumber);
+            var codeToDownload = codeContainer.querySelector('code').innerText;
+
+            // Create a Blob with the code content
+            var blob = new Blob(['<!DOCTYPE html><html>' + codeToDownload + '</html>'], { type: 'text/html' });
+
+            // Create a link element to trigger the download
+            var link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = 'output.html';
+
+            // Append the link to the document and trigger the download
+            document.body.appendChild(link);
+            link.click();
+
+            // Clean up the link element
+            document.body.removeChild(link);
+
+            // You can provide feedback to the user if needed
+            alert('Code downloaded as output.html!');
+        }
+    </script>
+</body>
+</html>

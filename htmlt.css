@@ -11,12 +11,13 @@ body {
 }
 
 ::-webkit-scrollbar {
-    background-color: #222;
+    background-color: var(--sb-bg);
     width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: tomato;
+    background-color: var(--sg-color);
+    border-radius: 10px;
 }
 
 /* Theme changer */
@@ -30,12 +31,18 @@ body {
     --body-display: flex;
     --cc-border: #ccc;
     --transition-duration-cacc: 0.3s;
+    --sidenav-bg-color: #222;
+    --sb-bg: #222;
+    --sg-color: tomato;
 }
 
 .switch-theme {
     --primary-color: black;
     --secondary-color: #dddddd;
     --cc-border: #333;
+    --sidenav-bg-color: #ccc;
+    --sb-bg: #ccc;
+    --sg-color: #555;
 }
 
 .sidenav-open {
@@ -49,7 +56,6 @@ body {
 
 .code-container {
     display: none;
-    /* Hide by default */
     max-height: 0;
     overflow: hidden;
     background-color: #111;
@@ -67,7 +73,16 @@ code {
     font-size: 25px;
 }
 
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .accordion-button {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
     background-color: tomato;
     cursor: pointer;
     padding: 18px;
@@ -78,9 +93,48 @@ code {
     transition: 0.4s;
 }
 
+.button a {
+    display: none; /* Hide the "Output" button initially */
+    width: 20%;
+    background-color: tomato;
+    cursor: pointer;
+    padding: 18px;
+    width: 20%;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    text-decoration: none;
+    border: grey 1px solid;
+    color: black;
+}
+
+.button a:hover {
+    background-color: red;
+    color: white;
+}
+
 .active,
 .accordion-button:hover {
-    background-color: #333;
+    background-color: red;
+    color: white;
+}
+
+.copyButton, .outputButton, .downloadButton {
+    display: none; /* Hide the "Copy," "Output," and "Download" buttons initially */
+    width: auto;
+    background-color: tomato;
+    cursor: pointer;
+    padding: 18px;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+.copyButton:hover, .outputButton:hover, .downloadButton:hover {
+    background-color: red;
     color: white;
 }
 
@@ -192,7 +246,7 @@ nav a h1 {
 .body .left-nav {
     display: var(--sidenav);
     width: 20%;
-    background-color: #222;
+    background-color: var(--sidenav-bg-color);
     position: fixed;
     height: 100%;
     margin-top: 100px;
@@ -220,7 +274,7 @@ nav a h1 {
 .left-nav a {
     display: block;
     text-decoration: none;
-    color: white;
+    color: var(--primary-color);
     font-size: 20px;
     padding: 10px;
     width: 100%;
@@ -393,7 +447,7 @@ img.htmlt-tag-img {
     .left-nav a {
         display: block;
         text-decoration: none;
-        color: white;
+        color: var(--primary-color);
         font-size: 15px;
         padding: 8px;
         width: 100%;
@@ -433,6 +487,14 @@ img.htmlt-tag-img {
     }
 
     /* Code Container */
+
+    .copyButton, .outputButton, .downloadButton {
+        font-size: 11px;
+    }
+
+    .accordion-button {
+        font-size: 11px;
+    }
 
     code {
         font-family: 'Courier New', monospace;

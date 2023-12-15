@@ -128,8 +128,15 @@
                     interior and exterior decor, and JavaScript is the electricity, water system, and many other
                     functional features that make the house livable.
                 </p>
-                <button class="accordion-button" onclick="toggleCodeContainer(1)">Click for Example <i
-                        class="fa-solid fa-caret-down"></i></button>
+                <div class="button" id="buttonGroup1">
+                    <button class="accordion-button" onclick="toggleCodeContainer(1)">Click for Example <i
+                            class="fa-solid fa-caret-down"></i></button>
+                    <button class="outputButton" onclick="runCode(1)">Output</button>
+                    <button class="copyButton" onclick="copyCode(1)"><i class="fa-regular fa-clipboard"></i></button>
+                    <button class="downloadButton" onclick="downloadCode(1)"><i
+                            class="fa-solid fa-download"></i></button>
+                </div>
+
                 <div class="code-container" id="codeContainer1">
                     <code>
                         &lt;!DOCTYPE html&gt;
@@ -277,8 +284,14 @@
                 </p>
 
                 <h2><b>This is an example of html file that includes all the common tags</b></h2>
-                <button class="accordion-button" onclick="toggleCodeContainer(2)">Click for Example <i
-                        class="fa-solid fa-caret-down"></i></button>
+                <div class="button" id="buttonGroup2">
+                    <button class="accordion-button" onclick="toggleCodeContainer(2)">Click for Example <i
+                            class="fa-solid fa-caret-down"></i></button>
+                    <button class="outputButton" onclick="runCode(2)">Output</button>
+                    <button class="copyButton" onclick="copyCode(2)"><i class="fa-regular fa-clipboard"></i></button>
+                    <button class="downloadButton" onclick="downloadCode(2)"><i
+                            class="fa-solid fa-download"></i></button>
+                </div>
                 <div class="code-container" id="codeContainer2">
                     <code>
                         &lt;!DOCTYPE html&gt;
@@ -382,8 +395,14 @@
                 </p>
 
                 <h2><b>This is an example of html file that includes all the common Attributes</b></h2>
-                <button class="accordion-button" onclick="toggleCodeContainer(3)">Click for Example <i
-                        class="fa-solid fa-caret-down"></i></button>
+                <div class="button" id="buttonGroup3">
+                    <button class="accordion-button" onclick="toggleCodeContainer(3)">Click for Example <i
+                            class="fa-solid fa-caret-down"></i></button>
+                    <button class="outputButton" onclick="runCode(3)">Output</button>
+                    <button class="copyButton" onclick="copyCode(3)"><i class="fa-regular fa-clipboard"></i></button>
+                    <button class="downloadButton" onclick="downloadCode(3)"><i
+                            class="fa-solid fa-download"></i></button>
+                </div>
                 <div class="code-container" id="codeContainer3">
                     <code>
                         &lt;!DOCTYPE html&gt;
@@ -455,8 +474,15 @@
                         main heading, while the &lt;nav&gt; section holds navigation links in an unordered list.
                         Sections (&lt;section&gt;) with unique IDs represent distinct parts of the content, and a
                         &lt;footer&gt; contains copyright information.</p>
-                    <button class="accordion-button" onclick="toggleCodeContainer(4)">Click for Example <i
-                            class="fa-solid fa-caret-down"></i></button>
+                    <div class="button" id="buttonGroup4">
+                        <button class="accordion-button" onclick="toggleCodeContainer(4)">Click for Example <i
+                                class="fa-solid fa-caret-down"></i></button>
+                        <button class="outputButton" onclick="runCode(4)">Output</button>
+                        <button class="copyButton" onclick="copyCode(4)"><i
+                                class="fa-regular fa-clipboard"></i></button>
+                        <button class="downloadButton" onclick="downloadCode(4)"><i
+                                class="fa-solid fa-download"></i></button>
+                    </div>
                     <div class="code-container" id="codeContainer4">
                         <code>
                         &lt;!DOCTYPE html&gt;
@@ -498,12 +524,29 @@
                         &lt;strong&gt; for strong emphasis (bold). These tags convey semantic meaning, helping browsers
                         and accessibility tools interpret the content correctly.
                     </p>
-                    <button class="accordion-button" onclick="toggleCodeContainer(5)">Click for Example <i
-                            class="fa-solid fa-caret-down"></i></button>
+                    <div class="button" id="buttonGroup5">
+                        <button class="accordion-button" onclick="toggleCodeContainer(5)">Click for Example <i
+                                class="fa-solid fa-caret-down"></i></button>
+                        <button class="outputButton" onclick="runCode(5)">Output</button>
+                        <button class="copyButton" onclick="copyCode(5)"><i
+                                class="fa-regular fa-clipboard"></i></button>
+                        <button class="downloadButton" onclick="downloadCode(5)"><i
+                                class="fa-solid fa-download"></i></button>
+                    </div>
                     <div class="code-container" id="codeContainer5">
                         <code>
-                        &lt;h1&gt;Main Heading&lt;/h1&gt;
-                        &lt;p&gt;This is a &lt;em&gt;paragraph&lt;/em&gt; with emphasized text. The &lt;em&gt; tag is used for emphasizing text, typically rendering it in italics. Similarly, the &lt;strong&gt; tag can be used for strong emphasis, rendering text in bold.&lt;/p&gt;
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html&gt;
+                            &lt;head&gt;
+                            &lt;title&gt;Page Title&lt;/title&gt;
+                            &lt;/head&gt;
+                            &lt;body&gt;
+
+                            &lt;h1&gt;Main Heading&lt;/h1&gt;
+                            &lt;p&gt;This is a &lt;em&gt;paragraph&lt;/em&gt; with emphasized text. The &lt;em&gt; tag is used for emphasizing text, typically rendering it in italics. Similarly, the &lt;strong&gt; tag can be used for strong emphasis, rendering text in bold.&lt;/p&gt;
+                        
+                            &lt;/body&gt;
+                            &lt;/html&gt;
                     </code>
                     </div>
                 </div>
@@ -512,12 +555,29 @@
                     <p>Links are created with the &lt;a&gt; tag and the href attribute. In this example, it links to
                         "https://www.example.com." Images are embedded using the &lt;img&gt; tag, with the src attribute
                         specifying the image source and alt providing alternative text for accessibility.</p>
-                    <button class="accordion-button" onclick="toggleCodeContainer(6)">Click for Example <i
-                            class="fa-solid fa-caret-down"></i></button>
+                    <div class="button" id="buttonGroup6">
+                        <button class="accordion-button" onclick="toggleCodeContainer(6)">Click for Example <i
+                                class="fa-solid fa-caret-down"></i></button>
+                        <button class="outputButton" onclick="runCode(6)">Output</button>
+                        <button class="copyButton" onclick="copyCode(6)"><i
+                                class="fa-regular fa-clipboard"></i></button>
+                        <button class="downloadButton" onclick="downloadCode(6)"><i
+                                class="fa-solid fa-download"></i></button>
+                    </div>
                     <div class="code-container" id="codeContainer6">
                         <code>
-                        &lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;
-                        &lt;img src="image.jpg" alt="A descriptive image"&gt;
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html&gt;
+                            &lt;head&gt;
+                            &lt;title&gt;Page Title&lt;/title&gt;
+                            &lt;/head&gt;
+                            &lt;body&gt;
+
+                            &lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;
+                            &lt;img src="image.jpg" alt="A descriptive image"&gt;
+                        
+                            &lt;/body&gt;
+                            &lt;/html&gt;
                     </code>
                     </div>
                 </div>
@@ -525,10 +585,24 @@
                     <h2>Lists</h2>
                     <p>Lists in HTML can be either unordered (&lt;ul&gt;) or ordered (&lt;ol&gt;). List items are
                         denoted by the &lt;li&gt; tag. This example showcases both types of lists with simple items.</p>
-                    <button class="accordion-button" onclick="toggleCodeContainer(7)">Click for Example <i
-                            class="fa-solid fa-caret-down"></i></button>
+                    <div class="button" id="buttonGroup7">
+                        <button class="accordion-button" onclick="toggleCodeContainer(7)">Click for Example <i
+                                class="fa-solid fa-caret-down"></i></button>
+                        <button class="outputButton" onclick="runCode(7)">Output</button>
+                        <button class="copyButton" onclick="copyCode(7)"><i
+                                class="fa-regular fa-clipboard"></i></button>
+                        <button class="downloadButton" onclick="downloadCode(7)"><i
+                                class="fa-solid fa-download"></i></button>
+                    </div>
                     <div class="code-container" id="codeContainer7">
                         <code>
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html&gt;
+                            &lt;head&gt;
+                            &lt;title&gt;Page Title&lt;/title&gt;
+                            &lt;/head&gt;
+                            &lt;body&gt;
+
                         &lt;ul&gt;
                             &lt;li&gt;Item 1&lt;/li&gt;
                             &lt;li&gt;Item 2&lt;/li&gt;
@@ -537,7 +611,10 @@
                         &lt;ol&gt;
                             &lt;li&gt;First&lt;/li&gt;
                             &lt;li&gt;Second&lt;/li&gt;
-                        &lt;/ol&gt;                       
+                        &lt;/ol&gt;  
+                        
+                            &lt;/body&gt;
+                            &lt;/html&gt;
                     </code>
                     </div>
                 </div>
@@ -546,10 +623,24 @@
                     <p>HTML tables are created using the &lt;table&gt; tag. Tables consist of rows (&lt;tr&gt;), header
                         cells (&lt;th&gt;), and data cells (&lt;td&gt;). This example shows a basic table with headers
                         and data.</p>
-                    <button class="accordion-button" onclick="toggleCodeContainer(8)">Click for Example <i
-                            class="fa-solid fa-caret-down"></i></button>
+                    <div class="button" id="buttonGroup8">
+                        <button class="accordion-button" onclick="toggleCodeContainer(8)">Click for Example <i
+                                class="fa-solid fa-caret-down"></i></button>
+                        <button class="outputButton" onclick="runCode(8)">Output</button>
+                        <button class="copyButton" onclick="copyCode(8)"><i
+                                class="fa-regular fa-clipboard"></i></button>
+                        <button class="downloadButton" onclick="downloadCode(8)"><i
+                                class="fa-solid fa-download"></i></button>
+                    </div>
                     <div class="code-container" id="codeContainer8">
                         <code>
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html&gt;
+                            &lt;head&gt;
+                            &lt;title&gt;Page Title&lt;/title&gt;
+                            &lt;/head&gt;
+                            &lt;body&gt;
+
                         &lt;table&gt;
                         &lt;tr&gt;
                             &lt;th&gt;Header 1&lt;/th&gt;
@@ -560,6 +651,9 @@
                             &lt;td&gt;Data 2&lt;/td&gt;
                         &lt;/tr&gt;
                         &lt;/table&gt;
+                        
+                            &lt;/body&gt;
+                            &lt;/html&gt;
                     </code>
                     </div>
                 </div>
@@ -567,10 +661,24 @@
                     <h2>Forms</h2>
                     <p>Forms are integral for user input. The &lt;form&gt; tag contains input elements like text and
                         password fields. The label tag is associated with input fields for better accessibility.</p>
-                    <button class="accordion-button" onclick="toggleCodeContainer(9)">Click for Example <i
-                            class="fa-solid fa-caret-down"></i></button>
+                    <div class="button" id="buttonGroup9">
+                        <button class="accordion-button" onclick="toggleCodeContainer(9)">Click for Example <i
+                                class="fa-solid fa-caret-down"></i></button>
+                        <button class="outputButton" onclick="runCode(9)">Output</button>
+                        <button class="copyButton" onclick="copyCode(9)"><i
+                                class="fa-regular fa-clipboard"></i></button>
+                        <button class="downloadButton" onclick="downloadCode(9)"><i
+                                class="fa-solid fa-download"></i></button>
+                    </div>
                     <div class="code-container" id="codeContainer9">
                         <code>
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html&gt;
+                            &lt;head&gt;
+                            &lt;title&gt;Page Title&lt;/title&gt;
+                            &lt;/head&gt;
+                            &lt;body&gt;
+
                         &lt;form action="/submit" method="post"&gt;
                         &lt;label for="username"&gt;Username:&lt;/label&gt;
                         &lt;input type="text" id="username" name="username"&gt;
@@ -580,6 +688,9 @@
 
                         &lt;input type="submit" value="Submit"&gt;
                         &lt;/form&gt;
+                        
+                            &lt;/body&gt;
+                            &lt;/html&gt;
                     </code>
                     </div>
                 </div>
@@ -589,10 +700,24 @@
                         controls attribute provides playback controls, and the &lt;source&gt; tag specifies the media
                         source and type.
                     </p>
-                    <button class="accordion-button" onclick="toggleCodeContainer(10)">Click for Example <i
-                            class="fa-solid fa-caret-down"></i></button>
+                    <div class="button" id="buttonGroup10">
+                        <button class="accordion-button" onclick="toggleCodeContainer(10)">Click for Example <i
+                                class="fa-solid fa-caret-down"></i></button>
+                        <button class="outputButton" onclick="runCode(10)">Output</button>
+                        <button class="copyButton" onclick="copyCode(10)"><i
+                                class="fa-regular fa-clipboard"></i></button>
+                        <button class="downloadButton" onclick="downloadCode(10)"><i
+                                class="fa-solid fa-download"></i></button>
+                    </div>
                     <div class="code-container" id="codeContainer10">
                         <code>
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html&gt;
+                            &lt;head&gt;
+                            &lt;title&gt;Page Title&lt;/title&gt;
+                            &lt;/head&gt;
+                            &lt;body&gt;
+
                         &lt;audio controls&gt;
                         &lt;source src="audio.mp3" type="audio/mp3"&gt;
                         Your browser does not support the audio tag.
@@ -602,6 +727,9 @@
                         &lt;source src="video.mp4" type="video/mp4"&gt;
                         Your browser does not support the video tag.
                         &lt;/video&gt;
+                        
+                            &lt;/body&gt;
+                            &lt;/html&gt;
                     </code>
                     </div>
                 </div>
@@ -611,10 +739,24 @@
                         document structure. They provide context to different parts of the content, aiding in
                         accessibility and SEO.
                     </p>
-                    <button class="accordion-button" onclick="toggleCodeContainer(11)">Click for Example <i
-                            class="fa-solid fa-caret-down"></i></button>
+                    <div class="button" id="buttonGroup11">
+                        <button class="accordion-button" onclick="toggleCodeContainer(11)">Click for Example <i
+                                class="fa-solid fa-caret-down"></i></button>
+                        <button class="outputButton" onclick="runCode(11)">Output</button>
+                        <button class="copyButton" onclick="copyCode(11)"><i
+                                class="fa-regular fa-clipboard"></i></button>
+                        <button class="downloadButton" onclick="downloadCode(11)"><i
+                                class="fa-solid fa-download"></i></button>
+                    </div>
                     <div class="code-container" id="codeContainer11">
                         <code>
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html&gt;
+                            &lt;head&gt;
+                            &lt;title&gt;Page Title&lt;/title&gt;
+                            &lt;/head&gt;
+                            &lt;body&gt;
+
                         &lt;header&gt;
                         &lt;h1&gt;Website Header&lt;/h1&gt;
                         &lt;/header&gt;
@@ -631,6 +773,8 @@
                         &lt;footer&gt;
                         &lt;p&gt;&amp;copy; 2023 My Website&lt;/p&gt;
                         &lt;/footer&gt;
+                            &lt;/body&gt;
+                            &lt;/html&gt;
                     </code>
                     </div>
                 </div>
@@ -639,10 +783,24 @@
                     <p>CSS styles are added using the &lt;style&gt; tag. In this example, the &lt;h1&gt; element is
                         styled to have a blue color, and paragraphs (&lt;p&gt;) are given a font size of 18 pixels.
                         JavaScript is embedded with the &lt;script&gt; tag, displaying an alert.</p>
-                    <button class="accordion-button" onclick="toggleCodeContainer(12)">Clock for Example<i
-                            class="fa-solid fa-caret-down"></i></button>
+                    <div class="button" id="buttonGroup12">
+                        <button class="accordion-button" onclick="toggleCodeContainer(12)">Click for Example <i
+                                class="fa-solid fa-caret-down"></i></button>
+                        <button class="outputButton" onclick="runCode(12)">Output</button>
+                        <button class="copyButton" onclick="copyCode(12)"><i
+                                class="fa-regular fa-clipboard"></i></button>
+                        <button class="downloadButton" onclick="downloadCode(12)"><i
+                                class="fa-solid fa-download"></i></button>
+                    </div>
                     <div class="code-container" id="codeContainer12">
                         <code>
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html&gt;
+                            &lt;head&gt;
+                            &lt;title&gt;Page Title&lt;/title&gt;
+                            &lt;/head&gt;
+                            &lt;body&gt;
+
                         &lt;style&gt;
                         h1 {
                             color: blue;
@@ -652,10 +810,16 @@
                             font-size: 18px;
                         }
                         &lt;/style&gt;
+
+                        &lt;h1&gt;This is a H1&lt;/h1&gt;
+                        &lt;p&gt;This a paragraph text  &lt;/p&gt;
     
                         &lt;script&gt;
                         alert("Hello, World!");
                         &lt;/script&gt;
+
+                            &lt;/body&gt;
+                            &lt;/html&gt;
                     </code>
                     </div>
                 </div>
